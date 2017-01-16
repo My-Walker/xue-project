@@ -17,6 +17,25 @@
     position: relative;
     .ui-dropdown {
         width: auto !important;
+        position: relative;
+        &.hoverHideTips {
+            .dropdown-body-widen{
+                min-width: 200px;
+                margin-left:-11px;
+                .inline-block{
+                    display: inline-block;
+                    width: 60px;
+                    a {
+                        &:hover {text-decoration: underline;}
+                    }
+                }
+            }
+        }
+        &.ui-dropdown-more {
+          .dropdown-body{
+            margin-left:-1px;
+          }  
+        }
         .dropdown-handle {
             display: inline-block;
             cursor: pointer;
@@ -24,13 +43,17 @@
             border-left: 1px solid transparent;
             border-right: 1px solid transparent;
         }
+        .selGradeTips{
+            position: absolute;
+            left: -25px;
+        }
         .dropdown-body {
             display: none;
             min-width: 120px;
             background: #fff;
             border: 1px solid #dcdcdc;
             position: absolute;
-            left: 0;
+            left: 6px;
             top: 29px;
             z-index: 1;
             overflow: hidden;
@@ -44,6 +67,7 @@
                 color: #666;
             }
         }
+        
         &.hover {
             position: relative;
             z-index: 10;
@@ -75,18 +99,14 @@
             padding: 0 5px;
         }
         .dropdown-body {
-            margin-left: 6px;
+            //margin-left: 5px;
             text-align: left;
         }
         .hover {
-            &:before {
-                padding-right: 9px;
-                content: " ";
-            }
             .dropdown-handle {
                 padding: 0 9px;
-                margin-left: -3px;
-                margin-right: -4px;
+                margin-left: -5px;
+                margin-right: -3px;
             }
         }
         li > a {
@@ -101,7 +121,7 @@
         width: 1190px;
         margin: 0 auto;
         .topleft-bar {
-            width: 410px;
+            width: 390px;
             &>li:first-child{
                 float: left;
                 em.text-danger {
@@ -109,11 +129,15 @@
                     height: 30px;
                     overflow: hidden;
                     float: left;
+                    a {
+                        color: #e74c3c;
+                        &:hover {text-decoration: underline;}
+                    }
                 }
             }
         }
         .topright-bar {
-            width: 780px;
+            width: 800px;
             height: 30px;
             text-align: right;
         }

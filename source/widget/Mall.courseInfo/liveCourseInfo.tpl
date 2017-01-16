@@ -18,7 +18,16 @@
             </div>
     </div>
     <div class="course-center-list f-left">
-       <div class="course-endtime">
+       <!--  <div class="course-info-limit">
+          <span class="limit-course"> <i class="fa fa-clock-o" aria-hidden="true"></i>
+            限额抢购
+          </span>
+          <span class="right">
+            名额仅剩: <i class="red">50</i>
+            人
+          </span>
+        </div> -->
+       <div class="course-endtime course-endtime-limit" style="top:-36px">
            <span>报名截止还剩:</span>
            <em class="settime" endtime="2016-7-25 19:15:59"></em>
            <script type="text/javascript">
@@ -35,6 +44,13 @@
 					</span> <del>原价:<em>￥825</em></del>
                    <span class="tips" title="本期已开课，您将从第二讲开始学习"><img src="img/icon-mon.png"/></span>
             </div>
+            <div class="courseConsult_info">
+                <buttom class="zhiCustomBtn" id="btn">选课咨询</buttom>
+            </div>
+            <!-- <a class="info-btn-help" href="javascript:void(0)" style="font-size: 15px;color: #1c88e0;float: right;border: 1px solid #1c88e0;padding:8px 15px; border-radius: 3px;">
+            <img src="/static/img/help.jpg" alt="" style="position: relative;top:-2px;">
+            买课咨询
+            </a> -->
         </div>
         <div class="course-favorable-list">
             优惠活动：
@@ -43,29 +59,23 @@
             <span>送练习册</span>
             <span>实物礼品</span>
         </div>
-        <div class="course-content-teacher">
+          <div class="course-content-teacher">
            <div class="coach-teacher">
                 <span class="coach-c">辅导老师：</span>
                 <span class="avatar-c">
 				          <img src="http://s02.xesimg.com/teacher/2013/08/26/13774956202468.jpg" alt="" class="coach-avatar-info">
 				      </span>
                 <span class="name-c">王海丰老师</span>
-               <span class="app-dimension-code">
+               <!-- <span class="app-dimension-code">
                    <img class="line" src="img/icon-line.png" alt="">
                    <img class="qq-jiaru" src="img/qq_90.png" alt="qq" width="45">
                     <em>
                        加入QQ群咨询<br/>
                        <i style="color:#e74c3c;font-style:normal;">4324134566</i><a href="#" style="float:right;margin:3px 5px 0;"><img src="img/icon-mon.png"/></a>
                    </em>
-               </span>
-                <span class="info-c "><strong class="hotReport">已满</strong><br/>剩余名额</span>
+               </span> -->
+                <span class="info-c ">剩余名额&nbsp;:&nbsp;<strong class="hotReport">已满</strong></span>
             </div>
-  <!--          <div class="course-teacher-qq">
-
-                   <span><img src="img/close-qq-layer.png" alt=""></span>
-                   <a href="#"><img src="img/qq_jiaru_layer.png" alt=""></a>
-
-           </div>-->
         </div>
         <div class="course-serve-list">
             <span class="f-left">课程服务：</span>
@@ -88,15 +98,15 @@
         </div>
 
         <div class="course-button-list">
+            <span class="course-sale-time">
+				        停售<em>开售时间：2016.12.06</em>
+			       </span>
             <span class="f-left">
-				<button class="btn btn-danger do_not_sign_up">暂时不可报名</button>
-			</span>
-            <span class="f-left">
-				<a class="btn btn-danger btn-join-exam" href="#">预约试听</a>
-			</span>
+              <a class="btn btn-danger btn-join-exam" href="#">预约试听</a>
+            </span>
             <span class="collect f-left">
-					<a id="collectId" onclick="collect(11323)" href="javascript:void(0);">收藏课程</a>
-				</span>
+              <a id="collectId" onclick="collect(11323)" href="javascript:void(0);">收藏课程</a>
+            </span>
         </div>
     </div>
 
