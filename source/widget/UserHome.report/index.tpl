@@ -14,352 +14,66 @@
 
 <div id="fullpage" class="studyReport">
 	<div class="section section-1">
-		<img src="img/section1.png" alt="">
-		<h4 class="title">第7讲 浮力及物体的密度</h4>
-		<div class="arrow-animation">
-            <div class="arrow"></div>
-            <p>向上滑动</p>      
+		<img class="title_report" src="img/report_title.png" alt="">
+        <div class="box">
+            <!--第一行(lineFirst)-->
+            <div class="lineF">
+                <div class="boxF">
+                    <div class="boxS">
+                        <div class="boxT" style="background-image: url(http://x01.xesimg.com/teacher/2016/01/14/14527583183514.jpg)">
+                        </div>
+                    </div>
+                </div>
+            </div>   
         </div>
+        <p class="report_author">Alice</p>
+        <div class="title_report_wrap">
+            <span class="top_dot"><img src="img/top_dot.png" alt=""></span>
+                <h4 class="title">第7讲 浮力及物体的密度</h4>
+            <span class="bottom_dot"><img src="img/bottom_dot.png" alt=""></span>
+        </div>
+        <ul class="time_total_wrap">
+            <li>
+                <p><span>75</span>mins</p>
+                <p>累计说英语</p>
+            </li>
+            <li>
+                <p><span>75</span>mins</p>
+                <p>本讲说英语</p>
+            </li>
+            <li>
+                <p><span>75</span>本
+                </p>
+                <p>累计读绘本</p>
+            </li>
+        </ul>
+        <ul class="level_wrap">
+             <li>
+                <a href="lesson.html">
+                    <span><img src="img/arrow_white.png" alt=""></span><span>查看课上表现点评</span>
+                    <div class="level_5">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </li>
+             <li>
+                <a href="###">
+                    <span><img src="img/arrow_white.png" alt=""></span><span>查看课下表现点评</span>
+                    <div class="level_5">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </li>
+        </ul>
 	</div> 
-
-    <div class="section section-2">
-        <img src="img/section-2.png" class="top" alt="">
-        <div class="overview">
-            <div class="headBall">
-                <div class="line"></div>
-            </div>
-            <div class="item  clearfix">
-                <div class="pull-left">
-                    <img src="img/icon_live.png" alt="">
-                    <div class="ball"></div>
-                    <div class="line_1"></div>
-                    <div class="line_2"></div>
-                </div>
-                <div class="pull-right">
-                    <p>
-                        <span>直播课已结束</span>
-                        <br/>        
-                        <span>直播课互动题正确率</span>
-                    </p>
-                </div>
-            </div>
-            <div class="item  clearfix">
-                <div class="pull-left">
-                    <img src="img/icon_stctixing.png" alt="">
-                    <div class="ball"></div>
-                    <div class="line_1"></div>
-                    <div class="line_2"></div>
-                </div>
-                <div class="pull-right">
-                    <p>
-                        <span>95分</span>
-                        <br/>        
-                        <span>随堂测得分</span>
-                    </p>
-                </div>
-            </div>
-            <div class="item  clearfix">
-                <div class="pull-left">
-                    <img src="img/icon_test.png" alt="">
-                    <div class="ball"></div>
-                    <div class="line_1"></div>
-                </div>
-                <div class="pull-right">
-                    <p>
-                        <span>2道</span>
-                        <br/>        
-                        <span>随堂测错题待改错</span>
-                    </p>
-                </div>
-            </div>
-        </div> 
-        <div class="arrow-animation">
-            <div class="arrow"></div>
-            <p>向上滑动</p>      
-        </div>
-    </div>
-    <div class="section section-4">
-        <h4 class="title">直播互动题正确率</h4>
-        <div class="correctRate">
-            <p class="my">90%</p>
-            <p class="text">我的正确率</p>
-            <p class="average">班级平均正确率<span>80%</span></p>
-        </div>
-        <div class="wrap">
-            <div class="teacherReviews clearfix">
-                <img src="img/teacher_speak.png" class="pull-left" alt="">        
-                <p class="pull-left">课上表现点评：</p>
-            </div>
-            <div class="advice triangle">
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表上表课上表现点课上表上表课上表现点课上表上表课上表现点课上表上表课上表现点课上表上表课上表现点课上表上表
-            </div>
-        </div>
-         <div class="arrow-animation">
-            <div class="arrow"></div>
-            <p>向上滑动</p>      
-        </div>
-    </div>
-    <div class="section section-4">
-        <h4 class="title">课上答题情况</h4>
-    	
-        <div class="timeline clearfix">
-            <div class="headBall"></div>
-            <div class="item clearfix">
-                <span class="time">09:00</span>
-                <div class="line">
-                    <div class="ball"></div>
-                </div>
-                <p class="message">
-                    进入直播间
-                </p>
-            </div>
-            <div class="item clearfix">
-                <span class="time">09:00</span>
-                <div class="line">
-                    <div class="ball"></div>
-                </div>
-                <p class="message">
-                    <span class="right">对</span>
-                    互动题1，用时30min，班内其他同学平均用时50min
-                </p>
-            </div>
-            <div class="item clearfix">
-                <span class="time">09:00</span>
-                <div class="line">
-                    <div class="ball"></div>
-                </div>
-                <p class="message">
-                    <span class="wrong">错</span>
-                    互动题1，用时30min，班内其他同学平均用时50min
-                </p>
-            </div>
-             <div class="item  clearfix">
-                <span class="time">09:00</span>
-                <div class="line">
-                    <div class="ball"></div>
-                </div>
-                <p class="message">
-                    <span class="not">未</span>
-                    互动题1，用时30min，班内其他同学平均用时50min
-                </p>
-            </div>
-             <div class="item  clearfix">
-                <span class="time">09:00</span>
-                <div class="line">
-                    <div class="ball"></div>
-                </div>
-                <p class="message">
-                    <span class="not">未</span>
-                    互动题1，用时30min，班内其他同学平均用时50min
-                </p>
-            </div>
-            <div class="item  clearfix">
-                <span class="time">09:00</span>
-                <div class="line">
-                    <div class="ball"></div>
-                </div>
-                <p class="message">
-                    <span class="not">未</span>
-                    互动题1，用时30min，班内其他同学平均用时50min
-                </p>
-            </div>
-            
-
-        </div>
-
-		<div class="arrow-animation">
-            <div class="arrow"></div>
-            <p>向上滑动</p>      
-        </div>
-    </div>
-    <div class="section section-5">
-    	<h4 class="title">随堂测正确率</h4>
-        <div class="correctRate">
-            <p class="my">
-                90
-                <small>分</small>
-            </p>
-            <p class="text"></p>
-            <p class="average">
-                班级平均分
-                <span>80</span>
-            </p>
-        </div>
-
-        <div class="wrap">
-            <div class="teacherReviews clearfix">
-                <img src="img/teacher_speak.png" class="pull-left" alt="">        
-                <p class="pull-left">随堂测点评：</p>
-            </div>
-            <div class="advice triangle">
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现点现
-                课上表现点课上表现点课上表现点课上表现点课上表现
-            </div>
-        </div>
-		<div class="arrow-animation">
-            <div class="arrow"></div>
-            <p>向上滑动</p>      
-        </div>
-    </div>
-    <div class="section section-6">
-        <h4 class="title">直播错题</h4>
-        <div class="liveWrong">
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题1</span>
-                    <span class="notComplete">未</span>
-                </p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题2</span>
-                    <span class="mistake">错</span>
-                </p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题1</span>
-                    <span class="mistake">错</span>
-                </p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题2</span>
-                    <span class="notComplete">未</span>
-                    
-                </p>
-                <img src="img/subject.png" alt="">
-            </div>
-        </div>
-    	
-		<div class="arrow-animation">
-            <div class="arrow"></div>
-            <p>向上滑动</p>      
-        </div>
-    </div>
-    <div class="section section-7">
-        <h4 class="title">随堂测错题</h4>
-        <div class="liveWrong"> <div class="item">
-                <p>
-                    <span class="subjectName">互动题1</span>
-                    <span class="mistake">待改错</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题2</span>
-                    <span class="complete">已订正</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题3</span>
-                    <span class="mistake">待改错</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题4</span>
-                    <span class="complete">已订正</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-             <div class="item">
-                <p>
-                    <span class="subjectName">互动题51</span>
-                    <span class="mistake">待改错</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题6</span>
-                    <span class="complete">已订正</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题11</span>
-                    <span class="mistake">待改错</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题22</span>
-                    <span class="complete">已订正</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题13</span>
-                    <span class="mistake">待改错</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题42</span>
-                    <span class="complete">已订正</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题511</span>
-                    <span class="mistake">待改错</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-            <div class="item">
-                <p>
-                    <span class="subjectName">互动题62</span>
-                    <span class="complete">已订正</span>
-                </p>
-                <p class="knowledge">考察知识点：三角函数的性质 三角函数的概念</p>
-                <img src="img/subject.png" alt="">
-            </div>
-        </div>
-    	
-		<div class="arrow-animation">
-            <div class="arrow"></div>
-            <p>向上滑动</p>      
-        </div>
-    </div>
-    <div class="section-8 section">
-    	<img src="img/share1.png" alt="">
-    	<a href="javasceipt:">点击分享</a>
-    	<img src="img/logo_share.png" class="logo" alt="">
-    </div>
 </div>
 <div class="cover"></div>
 

@@ -51,6 +51,7 @@ $(function() {
             line.css({
                 height: '+=2'
             })
+
             switch (line.height()) {
                 case 40:
                     $('.overview .item:eq(0) .pull-left img').animate({
@@ -125,6 +126,7 @@ $(function() {
                     cancelAnimationFrame(id);
                     break;
             }
+
         }
 
         function stopAnimation(stop) {
@@ -160,7 +162,6 @@ $(function() {
             navigationColor: '#fff',
             scrollOverflow: true,
             afterLoad: function(anchorLink, index) {
-
                 switch (index) {
                     case 1:
                         stopAnimation(false)
