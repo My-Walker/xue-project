@@ -10,11 +10,7 @@
             <li class="active">三年级</li>
         </ol>
         <div class="row">
-            <!--   12栏的用这个    -->
-            <div class="col-md-12">
-                <link rel="import" href="../../widget/Public.Module/course11.tpl?__inline">
-            </div>
-            <div class="col-md-12">
+           <div class="col-md-12">
                 <div class="add-selector-pic">
                     <img src="http://r01.xesimg.com/web/2016/04/20/14611181672040.jpg" />
                 </div>
@@ -22,6 +18,11 @@
                     <img src="http://r01.xesimg.com/web/2016/04/20/14611181672040.jpg" />
                 </div>
             </div>
+            <!--   12栏的用这个    -->
+            <div class="col-md-12">
+                <link rel="import" href="../../widget/Public.Module/course11.tpl?__inline">
+            </div>
+            
             <!--   12栏结束    -->
             <!--   左右分栏的用这个    -->
             <div class="col-md-12 top m10 mb10">
@@ -35,8 +36,41 @@
                     </li>
                 </ul> -->
                    <ul class="screen-rank preletive">
-                    <li><a href="##">课程按照上课时间排序</a></li>
-                    <li class="attend-course-time attend-course-grade"><span>上课时段：</span><a href="#"  class="current">初一</a><a href="#">初三</a><a href="#">初二</a></li>
+                    <li>
+                            <span class="select-area">选择所在地区</span>
+                            <span class="select-p">北京</span>
+                            <ul class="select-list">
+                                 <li class="current"><a href="#">北京</a></li>
+                                 <li><a href="#">讯门</a></li>
+                                 <li><a href="#">凤凰</a></li>
+                                 <li><a href="#">奇艺</a></li> 
+                                 <li><a href="#">腾讯</a></li>
+                                 <li><a href="#">讯门</a></li>
+                                 <li><a href="#">凤凰</a></li>
+                                 <li><a href="#">奇艺</a></li> 
+                                 <li><a href="#">腾讯</a></li>
+                                 <li><a href="#">讯门</a></li>
+                                 <li><a href="#">凤凰</a></li>
+                                 <li><a href="#">奇艺</a></li> 
+                                 <li><a href="#">腾讯</a></li>
+                                 <li><a href="#">讯门</a></li>
+                                 <li><a href="#">凤凰</a></li>
+                                 <li><a href="#">奇艺</a></li> 
+                                <li><a href="#">腾讯</a></li>
+                                 <li><a href="#">讯门</a></li>
+                                 <li><a href="#">凤凰</a></li>
+                                 <li><a href="#">奇艺</a></li> 
+                                <li><a href="#">腾讯</a></li>
+                                 <li><a href="#">讯门</a></li>
+                                 <li><a href="#">凤凰</a></li>
+                                 <li><a href="#">奇艺</a></li> 
+                                <li><a href="#">腾讯</a></li>
+                                 <li><a href="#">讯门</a></li>
+                                 <li><a href="#">凤凰</a></li>
+                                 <li><a href="#">奇艺</a></li> 
+                             </ul>
+                    </li>
+                    <li class="attend-course-time"><span>上课时段：</span><a href="#"  class="current">初一</a><a href="#">初三</a><a href="#">初二</a></li>
                     <li class="Onlylive-select">
                        已有 <strong>2000</strong> 名学员报名
                     </li>
@@ -60,3 +94,15 @@
 <!-- 公共底部 -->
 <script type="text/javascript" charset="utf-8" src="http://lead.soperson.com/20002039/10066500.js"></script>
 <link rel="import" href="../Layer/layer.Mall.foot.tpl?__inline">
+<script>
+$(function(){
+    $('.select-p').click(function(e){ 
+           $('.select-list').toggle();
+    }); 
+    $('.select-list li').click(function(){
+        var that = $(this);
+        $('.select-p').text(that.find('a').text())
+        that.parent().hide();
+    });
+})
+</script>

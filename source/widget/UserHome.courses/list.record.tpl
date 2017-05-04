@@ -14,6 +14,37 @@
         <li class="current"><a href="javascript:;">大纲</a></li>
         <li class=""><a href="javascript:;">附赠奖大纲</a></li>
     </ul>
+    <div class="course-list-tips">
+        您购买的课程包含2次考试，届时辅导老师会将具体的考试时间以群公告的形式通知到您，请留意！
+        <span class="close-tips"></span>
+    </div>
+    <style>
+        .course-list-tips {
+            height: 42px;
+            line-height: 42px;
+                background: #ffdd87;
+                color: #333;
+                padding: 0 15px;
+                font-size: 14px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+        }
+        .course-list-tips .close-tips {
+            float: right;
+            width:15px;
+            height: 15px;
+            background-image: url(http://res12.xesimg.com/i/img/courseCenterClose.png);
+            background-repeat: no-repeat;
+            margin-top:12px;
+            cursor: pointer;
+        }
+        
+    </style>
+    <script>
+        $('body').on('click','.close-tips',function(){
+            $('.course-list-tips').remove();
+        });
+    </script>
     <div class="tab-program-content">
         <div class="tab-program-content-general active">
             <ul class="teacher-tab">
