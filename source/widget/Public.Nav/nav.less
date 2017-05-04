@@ -183,7 +183,7 @@
         }
         .category-layer {
             display: none;
-            min-width: 295px;
+            min-width: 330px;
             position: absolute;
             left: 220px;
             top: 50px;
@@ -194,7 +194,7 @@
             border-left: 0;
             background-color: #f5f5f5;
             color: #333;
-            padding: 10px 20px;
+            padding: 10px;
             font-size: 14px;
             line-height: 30px;
             &.hover {
@@ -206,21 +206,50 @@
                 display: none;
                 .subitem {
                     margin-bottom: 12px;
+                    overflow: hidden;
                 }
                 &.hover {
                     display: block;
                 }
                 dt {
+                    float: left;
+                    width:60px;
                     font-weight: 700;
                     line-height: 30px;
-                     color:#039AE3;
+                     color:#333;
+                    font-size: 12px;
+                    text-align: right;
+                    i.fa {font-size: 14px;font-weight: normal;padding-left:10px;}
                 }
                 dd {
-                    line-height: 22px;
-                    margin-left: 0;
+                    float: left;
+                    line-height: 24px;
+                    margin-left: 10px;
+                    font-weight: normal;
+                    font-size: 12px;
+                    border-bottom: 1px solid #eaeaea;
+                    width: 230px;
+                    margin-top:5px;
+                    padding-bottom: 5px;
+                    &.noBerder {border:none;}
                     a {
-                        margin: 0;
-                        padding: 0;
+                        display: inline-block;
+                        position: relative;
+                        padding:0 10px;
+                        color: #666;
+                        font-family: 'SimSun';
+                        &:before{
+                           content: "";
+                            display: block;
+                            width: 1px;
+                            height: 13px;
+                            background: #eaeaea;
+                            position: absolute;
+                            left:0;
+                            top:3px;
+                            z-index: 1;
+                            
+                        }
                     }
                 }
             }
