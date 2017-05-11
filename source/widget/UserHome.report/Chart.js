@@ -6748,13 +6748,8 @@ module.exports = function(Chart) {
 						text: dataset.label,
 						fillStyle: (!helpers.isArray(dataset.backgroundColor) ? dataset.backgroundColor : dataset.backgroundColor[0]),
 						hidden: !chart.isDatasetVisible(i),
-						lineCap: dataset.borderCapStyle,
-						lineDash: dataset.borderDash,
-						lineDashOffset: dataset.borderDashOffset,
-						lineJoin: dataset.borderJoinStyle,
-						lineWidth: dataset.borderWidth,
-						strokeStyle: dataset.borderColor,
-						pointStyle: dataset.pointStyle,
+						lineCap: round,
+						
 
 						// Below is extra data used for toggling the datasets
 						datasetIndex: i
@@ -7038,7 +7033,7 @@ module.exports = function(Chart) {
 					ctx.save();
 
 					ctx.fillStyle = itemOrDefault(legendItem.fillStyle, globalDefault.defaultColor);
-					ctx.lineCap = itemOrDefault(legendItem.lineCap, lineDefault.borderCapStyle);
+					ctx.lineCap = 'round';
 					ctx.lineDashOffset = itemOrDefault(legendItem.lineDashOffset, lineDefault.borderDashOffset);
 					ctx.lineJoin = itemOrDefault(legendItem.lineJoin, lineDefault.borderJoinStyle);
 					ctx.lineWidth = itemOrDefault(legendItem.lineWidth, lineDefault.borderWidth);
@@ -7578,7 +7573,7 @@ module.exports = function(Chart) {
 			display: true,
 			color: 'rgba(0, 0, 0, 0.1)',
 			lineWidth: 1,
-			drawBorder: true,
+			drawBorder: false,
 			drawOnChartArea: true,
 			drawTicks: true,
 			tickMarkLength: 10,
@@ -9690,7 +9685,8 @@ module.exports = function(Chart) {
 	globalOpts.elements.arc = {
 		backgroundColor: globalOpts.defaultColor,
 		borderColor: '#fff',
-		borderWidth: 2
+		borderWidth: 0,
+		lineCap: 'round'
 	};
 
 	Chart.elements.Arc = Chart.Element.extend({
@@ -9922,7 +9918,7 @@ module.exports = function(Chart) {
 
 			// Stroke Line Options
 			var globalOptionLineElements = globalDefaults.elements.line;
-			ctx.lineCap = vm.borderCapStyle || globalOptionLineElements.borderCapStyle;
+			ctx.lineCap = 'round';
 
 			// IE 9 and 10 do not support line dash
 			if (ctx.setLineDash) {

@@ -1,29 +1,13 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>学习中心</title>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-
-</head>
-<body class="body-bgColor">
-
-<link rel="import" href="../../widget/UserHome.report/courseed.tpl?__inline">
-
-
-<script>
-	var app = new Vue({
-	  el: '#fullpage',
-	  data: {
-	    message: '56'
-	  },
-	  methods: function () {
-	  	
-	  }
-	})
+$(function(){
+	/**常规大圆**/
+	// drawBigCircle();
+	// drawSmallCircle();			
+})	
+function drawBigCircle(){
 	var Canvas = $('.Circle_cancvs');
 	for(var i=0;i<Canvas.length;i++){
+		console.log(i)
+		var dataVale = Canvas.eq(i).data('start');
 		var ctx =  Canvas[i].getContext('2d');
 			function Circle() {
 			    this.radius = 68;    // 圆环半径
@@ -68,11 +52,12 @@
 					    count++; 
 					}, 60); // 这里定义每60ms绘制一次 
 				}
-				var dataVale = Canvas.eq(i).data('value')
+				 var dataVale = Canvas.eq(i).data('value')
 			    var ring = new Ring(0, dataVale);  // 从2*Math.PI/3弧度开始，进度为50%的环
 				ring.drawRing(ctx);
 
 	}	
+	/**画小圆**/
 	var canvasSamll = $('.canvasSamll');
 	for(var i=0;i<canvasSamll.length;i++){
 		var ctx =  canvasSamll[i].getContext('2d');
@@ -140,11 +125,14 @@
 			    ringSamll.drawRing(ctx);	
 
 	}
-</script>
-</body>
-
-</html>
-
-
-
+}
+if(window.addEventListener){
+    window.addEventListener("hashchange", function(){
+    	drawBigCircle();
+    },false);
+}else if(window.attachEvent){
+    window.attachEvent("hashchange", function(){
+    	drawBigCircle();
+    });
+}
 

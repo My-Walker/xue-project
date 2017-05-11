@@ -1,26 +1,27 @@
 
 <!--
-    
     @require ../../lib/fullPage/jquery.fullPage.css
 	@require report.less
     @require ../../lib/jQuery/1.11.1/jquery.min.js
     @require ../../lib/fullPage/jquery.fullPage.js
     @require ../../lib/jQuery/1.11.1/jquery.slimscroll.min.js
     
-    @require circle_JT.js
+    
     @require report.js 
 
+    @require vue.js
 -->
 
 
-<!-- 随堂测 -->
+
 <div id="fullpage" class="studyReport study_course_end">
+<!-- 随堂测 -->
 	<div class="section section-1">
 		<h1 class="report_page_title">随堂测<p>Homework Score</p></h1>
         <p class="report_page_title_detail">XX同学，老师已经批改完你的随堂测啦。</p>
         <div class="pre_class_test">
             <div class="dom_inner">   
-                <p><span>56</span>分</p>
+                <p><span>{{message}}</span>分</p>
                 <p>随堂测得分</p>
                 <p>平均正确率56%</p>                 
             </div>

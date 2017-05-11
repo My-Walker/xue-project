@@ -1,12 +1,12 @@
 
 <!--
-    
     @require ../../lib/fullPage/jquery.fullPage.css
     @require report.less
     @require ../../lib/jQuery/1.11.1/jquery.min.js
     @require ../../lib/fullPage/jquery.fullPage.js
     @require ../../lib/jQuery/1.11.1/jquery.slimscroll.min.js
     
+    @require vue.js
     @require circle_JT.js
     @require Chart.js
     @require report.js
