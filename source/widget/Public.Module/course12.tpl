@@ -203,10 +203,11 @@
    </div>
     <div class="quota-full"><img src="img/quota-full.png"/></div>
 </div>
+<!--
 <script>
 $('.live-course-rank-list').hover(function() {
   $(this).css('border','1px solid #e74c3d');
 },function(){
    $(this).css('border','1px solid #fff');
 })
-</script>
+</script>-->
