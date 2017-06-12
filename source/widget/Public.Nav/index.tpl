@@ -35,28 +35,28 @@
         <div class="category-layer hover">
             <div class="category-subject" id="subject_1" data-id="1">
                 <dl class="subitem" data-id="1000">
-                   <dt>幼升<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
-                    <dd class="row"><a href="" >数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
+                   <dt>幼升小长期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学化学化学</a></dd>
+                     <dt>特惠短期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
                 </dl>
-                <dl class="subitem" data-id="1001">
-                   <dt>一年级<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
-                    <dd class="row"><a href="" >数学</a><a href="" >暑期班</a><a href="" >秋季班</a><a href="" >语文</a><a href="" >暑期班</a><a href="" >秋季班</a></dd>
+                    <dl class="subitem" data-id="1000">
+                   <dt>幼升小长期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
+                     <dt>特惠短期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
                 </dl>
-                <dl class="subitem" data-id="1002">
-                   <dt>二年级<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
-                    <dd class="row"><a href="" >数学</a><a href="" >暑期班</a><a href="" >秋季班</a><a href="" >语文</a><a href="" >暑期班</a><a href="" >秋季班</a></dd>
+                   <dl class="subitem" data-id="1000">
+                   <dt>幼升小长期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
+                     <dt>特惠短期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
                 </dl>
-                <dl class="subitem" data-id="1003">
-                   <dt>四年级<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
-                    <dd class="row"><a href="" >数学</a><a href="" >暑期班</a><a href="" >秋季班</a><a href="" >语文</a></dd>
-                </dl>
-                 <dl class="subitem" data-id="1003">
-                   <dt>五年级<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
-                    <dd class="row"><a href="" >数学</a><a href="" >暑期班</a><a href="" >秋季班</a><a href="" >语文</a></dd>
-                </dl>
-                 <dl class="subitem" data-id="1003">
-                   <dt>六年级<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
-                    <dd class="row noBerder"><a href="" >数学</a><a href="" >暑期班</a><a href="" >秋季班</a><a href="" >语文</a><a href="" >数学</a><a href="" >暑期班</a><a href="" >秋季班</a><a href="" >语文</a></dd>
+                   <dl class="subitem" data-id="1000">
+                   <dt>幼升小长期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
+                     <dt>特惠短期班<i class="fa fa-angle-right" aria-hidden="true"></i></dt>
+                    <dd class="row"><a href="" >1数学</a><a href="" >语文</a><a href="" >英语</a><a href="" >物理</a><a href="" >化学</a></dd>
                 </dl>
             </div>
 
