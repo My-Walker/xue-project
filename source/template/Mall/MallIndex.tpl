@@ -122,9 +122,10 @@
 </div>
 </div>
 <!-- 页面配置 -->
-<!-- WPA Button Begin -->
-<script charset="utf-8" type="text/javascript" src="http://wpa.b.qq.com/cgi/wpa.php?key=XzkzODA0NTAwOF8zNzcxNjVfNDAwODAwMjIxMV8"></script>
-<!-- WPA Button End -->
+<div class="courseConsult">
+    <buttom id="btn" class="zhiCustomBtn" onclick="javascript:utrack('xueersi', 'key=Pczhichi&amp;value=Pczhichi');">选课咨询</buttom>
+    <a href="#" class="feedbackBtn">意见反馈</a>
+</div>
 <script>
     var PAGE_CONFIG = {
         ID: 'Index',

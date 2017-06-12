@@ -21,7 +21,7 @@
 .courseConsult {
   position: fixed;
   width: 70px;
-  height: 114px;
+  height: 175px;
   right:0;
   top:30%;
   z-index: 1;
@@ -33,6 +33,15 @@
      background: url(/static/img/headphones_select.png) no-repeat;
      cursor: pointer;
   }
+    .feedbackBtn {
+        display: block;
+        width:60px;
+        height: 60px;
+         background: url(/static/img/feedBackBtn.png) no-repeat;
+          text-indent: -999999em;
+        margin:0px 0 0 6px;
+        border-top:1px solid #fff;
+    }
 }
 .after-courseConsult {
   position: fixed;
@@ -1990,7 +1999,7 @@ ul, li {
     }
   }
   .rank-satisfy {
-    width: 370px;
+    width: 350px;
     height: 56px;
     color: #999;
     overflow: hidden;
@@ -1999,12 +2008,13 @@ ul, li {
     margin-top:17px;
     padding-right: 30px;
     p.difficulty {
-      height: 30px;
-      line-height: 30px;
-      overflow: hidden;
-      color: #666;
-      font-size: 14px;
-       margin-bottom: 7px;
+         height: 60px;
+        line-height: 160%;
+        overflow: hidden;
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 0;
+        padding-top: 5px;
       a {
         padding-right: 10px;
       }
@@ -2015,40 +2025,47 @@ ul, li {
       }
   }
   .rank-coach {
-    width: 170px;
-    line-height: 90px;
+    width:310px;
     overflow: hidden;
-    span {
-      float: left;
-      display: inline-block;
-      min-width: 170px;
-      overflow: hidden;
-      color: #999;
-      font-size: 14px;
-      em {
-        color: #333;
+      .coach-teacher{
+            float: left;
+            width:155px;
+              padding-top: 25px;
+              font-size: 12px;
+              position: relative;
+          overflow: hidden;
+          .t-pic {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              float: left;
+              margin: 0 5px 5px 0 ;
+              border: 1px solid #dcdcdc;
+              cursor: pointer;
+          }
+          .t-name {
+              float: left;
+              color: #999;
+              margin-top: 2px;
+              i {
+                  display: inline-block;
+                  border: 1px solid #ff4343;
+                  color: #ff4343;
+                  font-style: normal;
+                  border-radius: 3px;
+                  padding: 0 2px;
+                  margin-left: 3px;
+                  line-height: auto;
+              }
+              em {
+                  color: #666;
+                  padding:2px 0;
+              }
+          }
       }
-    }
-    a {
-      padding-right: 10px;
-    }
-    img.img-left {
-      float: left;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin-left: 6px;
-      float: left;
-      margin: 15px 10px 0 0;
-    }
-    img.img-weixin {
-      float: left;
-      padding-left: 10px;
-      margin-top: 30px;
-    }
   }
   .rank-places {
+      display: none;
     width: 110px;
     color: #999;
     padding-top: 10px;
@@ -2087,16 +2104,15 @@ ul, li {
     width: 130px;
     overflow: hidden;
     text-align: center;
-
     strong {
       display: inline-block;
       color: #e74c3c;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: normal;
-      padding-top: 25px;
+      padding-top: 20px;
 
       &.former {
-        padding-top: 32px;
+        padding-top: 25px;
       }
         
     }
@@ -2108,6 +2124,8 @@ ul, li {
     }
     del {
       color: #999;
+      margin-left:5px;
+        font-size: 14px;
     }
   }
   .rank-btn {
