@@ -1,0 +1,165 @@
+﻿{
+    "stuInfo": {
+        "headImg": "/static/img/teacher_speak.png",
+        "name": "lily"
+    },
+    "catalogName": "第7讲浮力及物体的密度密度密度",
+    "isHaveEnglishInfo": 1,  
+    "englishInfo": {
+        "cumulativeSpeak": "75",
+        "thisSpeak": "89",
+        "cumulativeBook": "66"
+    },
+    "comment": {
+        "testStarNum": "2",
+        "testMsg": "",
+        "homeworkStarNum": "4",
+        "homeworkMsg": ""
+    },
+    "isHaveBeforeCourseTest": 1,
+    "beforeCourseTest": {
+        "stuScore": "56",
+        "averageRate": "56%"
+    },
+    "beforeCourseH5": {
+        "stuScore": "88",
+        "averageRate": "98%"
+    },
+    "isHaveInteractiveTest": "0",
+    "interactiveTest": {
+        "isJoinPlan": 1,
+        "teacherName": "lily",
+        "testCnt": "10",
+        "stuRate": "56%",
+        "averageRate": "56%",
+        "rightNum": "0",
+        "wrongNum": "1",
+        "noAnswerNum": "9"
+    },
+    "interactiveGame": {
+        "teacherName": "jhone",
+        "gameCnt": "8",
+        "stuRate": "96%"
+    },
+    "isHaveAfterCourseTest": "0",
+    "afterCourseTest": {
+        "typeName": "出门考",
+        "stuRate": "60%",
+        "averageScore": "70%"
+    },
+    "outCourseTest": {
+        "typeName": "出门考2",
+        "stuRate": "80%",
+        "averageRate": "70%"
+    },
+    "courseDetail": {
+        "type": 2,
+        "testList": [
+            {
+                "answerType": 1,
+                "testName": "互动题名称1",
+                "anwserTime": "9:00",
+                "anwserLongTime": "20分钟",
+                "averageTime": "60分钟",
+                "testImgUrl": "题目图片URl"
+            },
+            {
+                "answerType": 2,
+                "testName": "互动题名称2",
+                "anwserTime": "10:00",
+                "anwserLongTime": "30分钟",
+                "averageTime": "10分钟",
+                "testImgUrl": "题目图片URL"
+            },
+            {
+                "answerType": 3,
+                "testName": "互动题名称3",
+                "anwserTime": "10:00",
+                "anwserLongTime": "30分钟",
+                "averageTime": "10分钟",
+                "testImgUrl": "题目图片URL"
+            }
+        ]
+    },
+    "isHaveWrongTest": 1,
+    "WrongTestDetail": [
+    	{
+            "answerType": 1,
+            "testName": "互动题名称1",
+            "testImgUrl": "/static/img/subject.png"
+        },
+    	{
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+    	{
+            "answerType": 1,
+            "testName": "互动题名称1",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        },
+        {
+            "answerType": 2,
+            "testName": "互动题名称2",
+            "testImgUrl": "/static/img/subject.png"
+        }
+    ],
+    "homework": {
+        "status": 1,
+        "showMsg": "XX同学，赶紧提交随堂测呀!",
+        "stuScore": "87",
+        "averageRate": "86%",
+        "rightNum": "0",
+        "wrongNum": "10",
+        "wrongStatusMsg": "待改错"
+    },
+    "isHavePictureBook": "1",
+    "pictureBook": {
+        "averageScore": "90",
+        "isCompleted": 0
+    },
+    "quesUrl": {
+        "isShowQues": 1,
+        "quesUrl": "http://www.xueersi.com"
+    }
+}
