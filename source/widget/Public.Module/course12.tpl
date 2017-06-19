@@ -28,6 +28,7 @@
         <p class="difficulty">
             <a title="s01" href="http://www.xueersi.com/kc/35075-2268-6102.html" target="_blank">课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度课程满意度 </a>
         </p>
+        <p><span class="satisfy">这里是副标题</span></p>
     </div>
     <div class="rank-coach">
         <div class="coach-teacher">
@@ -44,10 +45,10 @@
         <strong class="former">￥1800</strong><del>￥1900</del> <br/> <span class="stop-shop-times">距离停售截止还剩<em>13</em>天</span>
     </div>
     <div class="rank-btn">
-        <a href="http://www.xueersi.com/kc/35075-2268-6102.html" class="btn" target="_blank">去报名</a>
+        <a href="http://www.xueersi.com/kc/35075-2268-6102.html" class="btn" target="_blank">查看详情</a>
     </div>
 <div class="rank-btn">
-    <a href="javascript:void(0);" onclick="courseInfor.videoPlaySwitch('http://video.xueersi.com/view/expVideoView/3-43484/af4159005b3a620b1d504fcc19039f61', '740', '520', '武汉暑期六星化学');" class="btn btn-orange">去体验</a>
+    <a href="javascript:void(0);" onclick="courseInfor.videoPlaySwitch('http://video.xueersi.com/view/expVideoView/3-43484/af4159005b3a620b1d504fcc19039f61', '740', '520', '武汉暑期六星化学');" class="btn btn-orange">体验直播</a>
 </div>
 </div>
 <div class="live-course-rank-list">
