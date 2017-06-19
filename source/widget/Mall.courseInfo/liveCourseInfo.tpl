@@ -57,7 +57,7 @@
             <span>续报9折</span>
             <span>送u盘</span>
             <span>送练习册</span>
-            <span>实物礼品</span>
+            <span>实物礼品</span> <span>实物礼品</span> <span>实物礼品</span> <span>实物礼品</span> <span>实物礼品</span> <span>实物礼品</span>
         </div>
           <div class="course-content-teacher">
            <div class="coach-teacher">
@@ -96,7 +96,9 @@
             <span>07月01日-08月30日每天9:00-11:00上课 </span>
             <span class="time-icon">有效期至2015-07-07</span>
         </div>
-
+        <div class="continue-end-time">
+            <span>秋季课程：7月10日-7月20日 每天15:45-18:05上课 (6月1日报名)</span>
+        </div>
         <div class="course-button-list">
             <span class="course-sale-time">
 				        停售<em>开售时间：2016.12.06</em>
