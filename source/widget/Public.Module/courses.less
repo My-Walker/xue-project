@@ -1775,7 +1775,7 @@ ul, li {
         li {
             float: left;width:270px;height: 60px;margin-left: 10px;margin-right: 20px;
             a {
-                display: block;height: 60px;background-image: url(./img/class-course.png);background-position: 0 0;background-repeat: no-repeat;border-radius:30px;border:2px solid #fff;
+                display: block;height: 60px;background-image: url(./img/class-course.png);background-position: -300px 0;background-repeat: no-repeat;border-radius:30px;border:2px solid #fff;
                 em{visibility:hidden; }
                 &:hover {border:2px solid #e74c3d;}
             }
@@ -1803,20 +1803,20 @@ ul, li {
             }
             &:nth-child(2){
                 a {
-                    background-position: -300px 0;
+                    background-position: -601px 0;
                     &:before {  background: url(./img/xiaCancel.png) no-repeat;}
                 }
             }
              &:nth-child(3){
                 a {
-                    background-position: -601px 0;
+                    background-position: -901px 0;
                      &:before {  background: url(./img/qiuCancel.png) no-repeat;}
                  }
             }
             &:last-child {
                  margin-right: 0;
                 a {
-                    background-position: -901px 0;
+                    background-position: 0 0;
                      &:before {  background: url(./img/dongCancel.png) no-repeat;}
                 }
             }
@@ -1892,7 +1892,7 @@ ul, li {
 .select-subject-list {
     background: #fff;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     overflow: hidden;
   &.select-edition-list {
     background: #fff;
@@ -1903,7 +1903,7 @@ ul, li {
   }
   li {
     float: left;
-    width: 140px;
+    width: 170px;
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -1912,7 +1912,8 @@ ul, li {
     overflow: hidden;
     border:1px solid #dbdbdb;
     border-radius: 3px;
-    margin-right: 17px;
+    margin-right: 12px;
+      margin-bottom: 10px;
     a {
       display: block;
       img {
@@ -1936,6 +1937,9 @@ ul, li {
       border:0;
       margin:0;
     }
+      &:nth-child(7){
+          margin-left:90px;
+      }
   }
 }
 .live-course-rank-list {

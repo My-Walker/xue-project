@@ -90,6 +90,31 @@
                     .ao-subtitle-left{
                         width: 575px;
                         border-right: 1px solid #eaeaea; 
+                       
+                        .handwrap {
+                           height: 80px;
+                            line-height: 80px; 
+                            font-size: 16px;
+                             border-top: 1px solid #eaeaea;
+                           
+                            span.handout {
+                                float: left;
+                                width:400px;
+                                padding-left: 85px;
+                                em {
+                                    width:40px;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    color: #e74c3d;
+                                    font-size: 14px;
+                                    border-radius: 2px;
+                                    border:1px solid #e74c3d;
+                                   text-align: center;
+                                    margin-right: 10px;
+                                    display: inline-block;
+                                }
+                            }
+                        }
                         .order-teacher{
                             width: 100%;
                             height: 115px;
@@ -206,6 +231,12 @@
                     text-align: center;
                     font-family: "Microsoft YaHei";
                     font-size: 16px;
+                     a.alterAddress {
+                         display: block;
+                            font-size: 14px;
+                            color:#3bafda;
+                         margin-top: 9px;
+                        }
                 }
                 .ao-second{
                     width: 16%; 
@@ -218,4 +249,18 @@
             }
         }
     }
+}
+.order-setAddress {
+    float: left;
+    display: block;
+    width:100%;
+    border-top:1px solid #eaeaea;
+    background: #fff;
+    .ui_ship_addr ul.shipadd_list li {width:100%;}
+    .ui_ship_addr ul.shipadd_list li.active {border:1px solid #3bafda;}
+    .ui_ship_addr ul.shipadd_list li .ship_btns {
+        visibility: visible;
+    }
+    .ui_ship_addr ul.shipadd_list li .addr_detail span.addr_name {padding-left:0;cursor: pointer;}
+    .f_detailAddress {display: none;}
 }
