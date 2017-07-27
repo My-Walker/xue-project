@@ -8,6 +8,10 @@
         <span>课程</span>
     </a>
     <a href="" class="btn btn-primary" data-id="WebAPP">
+        <i class="fa fa-mortar-board"></i>
+        <span>讲座</span>
+    </a>
+    <a href="" class="btn btn-primary" data-id="WebAPP">
         <i class="fa fa-user"></i>
         <span>问老师</span>
     </a>

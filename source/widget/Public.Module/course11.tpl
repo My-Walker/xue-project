@@ -8,10 +8,10 @@
 -->
 <div class="select-class-course">
     <ul>
-        <li class=""><a href=""><em>暑假班</em></a></li>
+        <li class="disable-class"><a href=""><em>暑假班</em></a></li>
         <li class="current"><a href=""><img src="" alt=""><em>暑假班</em></a></li>
         <li class="disable-class"><a href=""><img src="" alt=""><em>暑假班</em></a></li>
-        <li class=""><a href=""><img src="" alt=""><em>暑假班</em></a></li>
+        <li class="disable-class"><a href=""><img src="" alt=""><em>暑假班</em></a></li>
     </ul>
 </div>
 <!--<div class="col-course-title">disable-class-->
@@ -28,6 +28,13 @@
     <li class="current"><a href="#">数学</a></li>
     <li><a href="#">数学数学</a></li>
     <li><a href="#">数学</a></li>
+     <li><a href="#">数学</a></li>
+      <li><a href="#">数学</a></li>
+       <li><a href="#">数学</a></li>
+        <li><a href="#">数学</a></li>
+         <li><a href="#">数学1</a></li>
+          <li><a href="#">数学2</a></li>
+           <li><a href="#">数学3</a></li>
 </ul>
 <ul class="select-subject-list select-special-list">
     <li class="select-title">选择难度</li>

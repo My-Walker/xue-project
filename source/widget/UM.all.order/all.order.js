@@ -11,29 +11,29 @@ $("#order_tab li").on('click', function(){
 });
 $('#order_tab li:first').click();
 
-function orderTab(ordertype,page){
-    $.ajax({
-        type: "get",
-        url: "/MyOrders/ajaxOrderList",
-        dataType: "html",
-        data:'type=' + ordertype + '&curpage=' + page, 
-        success: function(list){
-            var list = $.trim(list);
-            if(list.substr(0,1)=='<'){
-                var box = $('#page_list');
-                box.html(list);
-            }else{
-                if(list.substr(0,4)=='http' || list.substr(0,1)=='/'){
-                    window.location.href = list;
-                    return false;
-                }
-            } 
-        },
-        error:function(){  
-            alert("异步失败");  
-        }  
-    });
-}
+//function orderTab(ordertype,page){2017
+//    $.ajax({
+//        type: "get",
+//        url: "/MyOrders/ajaxOrderList",
+//        dataType: "html",
+//        data:'type=' + ordertype + '&curpage=' + page, 
+//        success: function(list){
+//            var list = $.trim(list);
+//            if(list.substr(0,1)=='<'){
+//                var box = $('#page_list');
+//                box.html(list);
+//            }else{
+//                if(list.substr(0,4)=='http' || list.substr(0,1)=='/'){
+//                    window.location.href = list;
+//                    return false;
+//                }
+//            } 
+//        },
+//        error:function(){  
+//            alert("异步失败");  
+//        }  
+//    });
+//}
 
 //点击取消订单
 $("body").on("click",'.del', function(){
@@ -68,25 +68,25 @@ $("body").on("click",'.del', function(){
     }
 })
 
-//调用模态框js
-function orderModal(){
-    $.ajax({
-        type: "get",
-        url: "order.modal.html",
-        dataType: "html",
-        success: function(result) {
-            if(result){
-                createModal.show({
-                    id : 'orderModal',
-                    title : '重新购买',
-                    cls : 'infor-Modal',
-                    content : result
-                }); 
-                $('#orderModal').modal({0: 'static', keyboard: false,show: true});
-            }
-        },
-    });
-} 
+//调用模态框js20170720
+//function orderModal(){
+//    $.ajax({
+//        type: "get",
+//        url: "order.modal.html",
+//        dataType: "html",
+//        success: function(result) {
+//            if(result){
+//                createModal.show({
+//                    id : 'orderModal',
+//                    title : '重新购买',
+//                    cls : 'infor-Modal',
+//                    content : result
+//                }); 
+//                $('#orderModal').modal({0: 'static', keyboard: false,show: true});
+//            }
+//        },
+//    });
+//} 
 
 // 头像切换封装函数
 var courses = courses || {};

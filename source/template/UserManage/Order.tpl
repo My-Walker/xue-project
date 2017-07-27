@@ -39,19 +39,19 @@
         index : 1, // 当前页
         // 点击分页时的回调，返回被点击的页数
         click : function(ordertype,index){
-            $.ajax({
-                type: "get",
-                url: "/MyOrders/ajaxOrderList",
-                dataType: "html",
-                data:'type=' + ordertype + '&curpage=' + index, 
-                success: function(list){
-                    var box = $('#page_list');
-                    box.html(list);
-                },
-                error:function(){  
-                    alert("异步失败");  
-                }  
-            });
+//            $.ajax({
+//                type: "get",
+//                url: "/MyOrders/ajaxOrderList",
+//                dataType: "html",
+//                data:'type=' + ordertype + '&curpage=' + index, 
+//                success: function(list){
+//                    var box = $('#page_list');
+//                    box.html(list);
+//                },
+//                error:function(){  
+//                    alert("异步失败");  
+//                }  
+//            });
         }
     });
 </script>
