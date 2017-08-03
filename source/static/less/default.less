@@ -71,8 +71,10 @@ a,button,.btn{
     &.icon-arrow-right {
         width: 4px;
         height: 14px;
-        font: 400 9px/14px consolas;
+        font: 400 14px/14px consolas;
         padding-top: 4px;
+        color: rgba(255,255,255,.3);
+
     }
 }
 .header-layer {
@@ -195,7 +197,9 @@ a,button,.btn{
 
 #module-breadcrumb {
     background-color: transparent;
-    margin-bottom: 9px;
+    margin: 5px 0;
+    padding:8px;
+    font-size: 14px;
     >.active {
         color: #1e89e0;
     }
@@ -343,9 +347,14 @@ ul.grade-list {
 }
 .live-card{
             width: 290px;
+            // height: 198px;
             background: #fff;
             float: left;
             margin-right: 10px;
+            perspective:800px;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
             &:hover{
                .live-course-title{
                 top:0 !important;
@@ -354,9 +363,9 @@ ul.grade-list {
             .live-time-tip{
                 .live-time-tip-container{
                     line-height: 22px;
-                    height: 70px;
+                    height: 80px;
                     box-sizing: border-box;
-                    padding:10px;
+                    padding:10px 0 10px 10px;
                     margin-right: 10px;
                     p{
                         margin-bottom: 0;
@@ -366,9 +375,23 @@ ul.grade-list {
                         margin-right: 5px;
                         margin-top: 8px;
                         span{
+                            &.title {
+                                float:left;
+                                display: inline;
+                                width: 200px;
+                                 line-height: 20px;
+                                 font-size: 14px;
+                            }
+                            &.name {
+                                float: right;
+                                width: 50px;
+                                 line-height: 18px;
+                                 text-align: right;
+                                  font-size: 12px;
+                            }
                             &.time{
                                 color:#ed5565;
-                                font-size: 16px;
+                                font-size: 14px;
                                 line-height: 14px;
                             }
                             &.teacher{
@@ -399,36 +422,96 @@ ul.grade-list {
                         height: 20px;
                         overflow: hidden;
                         span{
-                            font-size: 14px;
-                            float: right;
+                             font-size: 16px;
+                            &.name {
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
             }
+//             &:hover .live-course-box{
+//                transform:rotateY(180deg);
+//            }
             .live-course-box{
                 overflow: hidden;
-                position: relative;
-                width: 290px;
+                  position: relative;
+                  width: 290px;
                 .live-course-title{
-                    display: block;
+                   display: block;
                     position: absolute;
                     top: -198px;
                     height: 198px;
-                    background: rgba(0,0,0,0.6);
+                    background: rgba(0, 0, 0, 0.6);
                     width: 100%;
-                    transition:top .3s linear;
+                    transition: top .3s linear;
                     text-align: center;
-                    line-height: 198px;
+                    z-index: 4;//new
                     span{
-                        padding: 12px 20px;
-                        border-radius: 3px;
-                        color:#fff;
+                       border-radius: 3px;
+                      color: #fff;
+                      display: block;
+                      width: 150px;
+                      height: 40px;
+                      line-height: 40px;
+                      margin: 79px auto 15px;
+                      font-size: 14px;
                     }
                 }
-                a.success_join{
-                    top:0 ;cursor: default;
+                 a.success_join{
+                    cursor: default;top:0;
                     span{
-                        background: #bfbfbf !important;cursor: default;
+                       background: #bfbfbf !important;cursor: default;
+                    }
+                }
+                a.all-live {
+                    font-size: 14px;color:#2ca0ff;
+                }
+            }
+    //new
+            &.live-series {
+                .live-course-box {
+                    .series-icon {
+                        width:80px;
+                        height: 34px;
+                        line-height: 34px;
+                        font-size: 14px;
+                        color:#fff;
+                        background: #333;
+                        text-align: center;
+                        position: absolute;
+                        right: 0;
+                        top:0;
+                        z-index: 3;
+                        opacity: 0.9;
+                        &:before{
+                            content: '';
+                            width:80px;
+                            height: 34px;
+                            line-height: 34px;
+                            background: #333;
+                            opacity: 0.4;
+                            position: absolute;
+                            right: 2px;
+                            top:2px;
+                            z-index: -2; 
+                        }
+                    }
+                }
+                .live-time-tip {
+                    .live-time-tip-container {
+                        height: 120px;
+                        p {
+                            a {
+                                float: left;font-size: 14px;
+                                &.info{
+                                    color:#509ce4;line-height: 35px;
+                                }
+                                &.btn-look {
+                                    float: right;width:120px;height: 35px;line-height: 35px;background: #3bafda;color:#fff;text-align: center;border-radius: 2px;
+                                }
+                            }
+                        }
                     }
                 }
             }

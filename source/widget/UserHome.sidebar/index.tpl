@@ -8,6 +8,10 @@
         <span>课程</span>
     </a>
     <a href="" class="btn btn-primary" data-id="WebAPP">
+        <i class="fa fa-mortar-board"></i>
+        <span>讲座</span>
+    </a>
+    <a href="" class="btn btn-primary" data-id="WebAPP">
         <i class="fa fa-user"></i>
         <span>问老师</span>
     </a>
@@ -31,4 +35,10 @@
         <i class="fa fa-star-o"></i>
         <span>收藏</span>
     </a> -->
+</div>
+<div id="module-sidebar-ask" class="btn-group-vertical pull-right" role="group" aria-label="...">
+    <a href="CourseList.html" class="btn btn-primary" data-id="Courses">
+        <i class="fa fa-play-circle-phone"></i>
+        <span>售后咨询</span>
+    </a>
 </div>

@@ -23,12 +23,14 @@ fCheck.bordercss = function(argument) {
    }else{$(argument).css('border','1px solid #d2d2d2');}
 }
 
-/* 验证昵称 */
+/* 验证昵称、真实姓名 */
 $(function(){
     var nickname = $('.nickname');
+    var realname = $('.bi-content .realname');
+    var englishname = $('.englishName');
     $(nickname).on('focus',function(){
         nickname.data('lastVal', $.trim(nickname.val()));
-        $('.prompt-empty').html('请输入不超过6个汉字、18个字母或18个数字').css({
+        $('.prompt-empty-nick').html('请输入不超过6个汉字、18个字母或18个数字').css({
             color: '#999',
             display: 'block'
         });
@@ -37,7 +39,7 @@ $(function(){
         });
     });
     $(nickname).on('blur',function(){
-        fCheck.clearTips(".prompt-empty");
+        fCheck.clearTips(".prompt-empty-nick");
         if (nickname.val() == '') {            
             $(".nickname-warning").html('请输入昵称').css({
                 display: 'block',
@@ -54,11 +56,69 @@ $(function(){
             }
         }
     });
+    $(realname).on('focus',function(){
+        realname.data('lastVal', $.trim(realname.val()));
+        $('.prompt-empty-real').html('请输入不超过4个汉字').css({
+            color: '#999',
+            display: 'block'
+        });
+        $(".realname-warning").css({
+            display: 'none',
+        });
+    });
+    $(realname).on('blur',function(){
+        fCheck.clearTips(".prompt-empty-real");
+        if (realname.val() == '') {            
+            $(".realname-warning").html('请输入真实姓名').css({
+                display: 'block',
+            });
+        }else{
+            if(realname.data('lastVal') != $.trim(realname.val())) {
+                $(".realname").css('border','1px solid #d2d2d2');
+                fCheck.clearTips(".realname-warning");
+                $.fn.realname();
+            }else{
+                $(".realname-warning").css({
+                    display: 'block',
+                });
+            }
+        }
+    });
+    $(englishname).on('focus',function(){
+        englishname.data('lastVal', $.trim(englishname.val()));
+        $('.prompt-empty-english').html('请输入不超过12个英文字母').css({
+            color: '#999',
+            display: 'block'
+        });
+        $(".englishname-warning").css({
+            display: 'none',
+        });
+    });
+    $(englishname).on('blur',function(){
+        fCheck.clearTips(".prompt-empty-english");
+        if (englishname.val() == '') {            
+            $(".englishname-warning").css({
+                display: 'none',
+            });
+        }else{
+            if(englishname.data('lastVal') != $.trim(englishname.val())) {
+                $(".englishName").css('border','1px solid #d2d2d2');
+                fCheck.clearTips(".englishname-warning");
+                $.fn.englishname();
+            }else{
+                $(".englishname-warning").css({
+                    display: 'block',
+                });
+            }
+        }
+    });
 });
 
 var boxs = {
     nickname: '.nickname',
+    realname: '.bi-content .realname',
     school:'.school'
+   
 }
 
 $.fn.nickname = function(){
@@ -72,6 +132,31 @@ $.fn.nickname = function(){
             $.fn.nicknameajax();
         }else{
             fCheck.setTips(".nickname-warning",'只能输入数字、汉字和字母');
+        }
+    }
+};
+$.fn.englishname = function(){
+    var _val = $.trim($('.englishName').val());
+    if (_val !== '') {
+        var reg = /^[a-zA-Z ]{1,12}$/;
+        if(reg.test(_val)){
+           $('.englishName').css('border','1px solid rgb(104, 192, 74)');
+        }else{
+            fCheck.setTips(".englishname-warning",'只能输入英文字母');
+        }
+    }
+};
+$.fn.realname = function(){
+    var box = $(boxs.realname),
+    val = box.val();
+    if (val == '') {
+        fCheck.setTips(".realname-warning",'请输入昵称');
+    }else {
+        var reg = /^[\u4E00-\u9FA5\uF900-\uFA2D]{1,4}$/;
+        if(reg.test(val)){
+            $.fn.realnameajax();
+        }else{
+            fCheck.setTips(".realname-warning",'只能输入汉字');
         }
     }
 };
@@ -105,6 +190,34 @@ $.fn.nicknameajax = function(){
         });
     }
 }
+$.fn.realnameajax = function(){
+    var box = $(boxs.realname),
+        val = box.val(),
+        d_val = $.trim(box.data('lastVal'));
+    if($.trim(val) != d_val){
+        $.ajax({
+            url : '/MyInfos/checkAvailableRealName',
+            type : 'GET',
+            dataType : 'json',
+            data : 'realname=' + $('.bi-content .realname').val(),
+            timeout: 7000,
+            async: true,
+            success  : function(result){
+                if(result.sign == 0){
+                    fCheck.setTips(".realname-warning",result.msg);
+                    return false;
+                } else if(result.sign == 1){
+                    fCheck.clearTips(".realname-warning");
+                    fCheck.bordercss('.bi-content .realname');
+                    $(box).data('lastVal',val);
+                    return true;
+                }else{
+                    window.location.href = result.msg;
+                }
+            }
+        });
+    }
+}
 
 /* 学校格式验证 */
 $.fn.school = function(){
@@ -131,7 +244,7 @@ $('.school').on('blur',function(){
 });
 /* 点击提交按钮验证 */
 function inforCheckform () {
-    if ($(".nickname").val() == $(".nickname").data("nickname") && $(".school").val() == $(".school").data("school") && $("#year").find("option:selected").text() == $("#year").attr("rel") && $("#month").find("option:selected").text() == $("#month").attr("rel") && $("#day").find("option:selected").text() == $("#day").attr("rel")) {
+    if ($(".englishName").val() == $(".englishName").data("englishname") && $(".school").val() == $(".school").data("school") && $("#year").find("option:selected").text() == $("#year").attr("rel") && $("#month").find("option:selected").text() == $("#month").attr("rel") && $("#day").find("option:selected").text() == $("#day").attr("rel")) {
         alert('您没有修改或新增任何资料');
         return false;
     }else{

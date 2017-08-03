@@ -79,6 +79,11 @@
  	padding-top: 5px;
  	cursor: default;
  }
+ .label-Notdelay{
+ 	background: #ccd1d9;
+ 	padding-top: 12px;
+ 	cursor: default;
+ }
  .label-continun{
  	background: #37bc9b;
  	padding-top: 12px;
@@ -102,6 +107,65 @@
 	white-space: nowrap;
 	padding: 0 15px;
 	line-height: 42px;
+}
+.row-home-slide {
+    width:1190px;
+    margin:0 auto 0;
+    overflow: hidden;
+}
+.home-slide-wrap {
+    width:1050px;
+    height: 70px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+    left:-10px;
+    ul {
+        height: 70px;
+        li{
+            overflow: hidden;
+        display: none;
+            &.active {
+                display: block;
+            }
+            a {display: block;height: 70px;}
+        }
+    }
+    .focus-num-wrap {
+        height: 25px;
+        width:100%;
+        position: relative;
+        bottom:25px;
+        z-index: 1;
+        ol {
+            width: 99%;
+            position: absolute;
+            left: 0;
+            bottom: 4px;
+            z-index: 1;
+            text-align: right;
+            margin-left: 0;
+            padding:0;
+            li {
+                display: inline-block;
+                width:20px;
+                height: 20px;
+                border-radius: 20px;
+                background: #fff;
+                line-height: 20px;
+                font-size: 12px;
+                text-align: center;
+                margin-left: 5px;
+                cursor: pointer;
+                text-indent: 0;
+                border:0;
+                &.active {
+                    background: rgba(0, 0, 0, 0.7);
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
 .courselayout-list{
 
@@ -619,6 +683,7 @@ table tr.even, table tr.alt, table tr:nth-of-type(2n){
 	.delay-fsd{
 		float: left;
 		margin-right: 22px;
+		width: 180px;
 	}
 	.delay-detail{
 		float: left;
@@ -1277,7 +1342,8 @@ table tr.even, table tr.alt, table tr:nth-of-type(2n){
 	}
 }
 .drop-course-detail-inner{
-	padding: 20px 82px 5px;
+	padding: 5px 15px;
+    padding-right: 0;
 	.drop-charge-tip{
 		font-size: 16px;
 	}
@@ -1297,6 +1363,12 @@ table tr.even, table tr.alt, table tr:nth-of-type(2n){
 		}
 		span{
 			color: #e74c3c;
+		}
+		label {
+			padding: 0 3px;
+		    font-size: 12px;
+		    margin-right: 1px;
+		    font-weight: normal;
 		}
 	}
 	p.drop-charge-explain{
@@ -1577,7 +1649,7 @@ button.ajust-course-btn[disabled]{
 	}
 }
 .permanent-adjust-nocourse-detail{
-	background: url('img/password_end.png') no-repeat left center;
+	background: url('img/password_end.png') no-repeat 50px center;
 	height: 309px;
 	line-height: 24px;
 	padding: 85px 0 46px 280px;

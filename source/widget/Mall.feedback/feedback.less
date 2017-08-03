@@ -1,0 +1,111 @@
+.online-service-body {
+     width: 100%;
+        height: 110px;
+        background: #3baeda;
+    .online-service {
+       width:1190px;
+        margin:0 auto;
+        overflow: hidden;
+        .o-pic {
+            float: left;
+            width:105px;
+            margin:10px 30px 0 60px;
+        }
+        .o-text {
+            float: left;
+            width:900px;
+            font-size: 16px;
+            color: #fff;
+            span {
+                display: block;
+                &:first-child {
+                    padding-top:30px;
+                }
+                button {
+                    display: inline-block;
+                    border:0;
+                    width:120px;
+                    height: 36px;
+                    line-height: 36px;
+                    border-radius: 2px;
+                    color:#3baeda;
+                    background: #fff;
+                    margin-left:20px;
+                }
+            }
+        }
+    }
+}
+.feedback-body {
+    background: #fff;
+    margin:20px auto;
+    overflow: hidden;
+    padding-bottom: 20px;
+    .f-item {
+        overflow: hidden;padding:20px 40px 0 ;
+        h1 {
+            font-size: 14px;font-weight: normal;color: #666;
+            em {color:#e74c3d;}
+            &.three {padding-left: 10px;}
+        }
+        ul.f-list {
+            overflow: hidden;margin-top:30px;padding-left: 12px;
+            li {
+                float:left;width:140px;height: 40px;line-height: 40px;border:1px solid #dcdcdc;text-align: center;font-size: 14px;color:#666;margin-right: 20px;border-radius: 2px;cursor: pointer;
+                &.active {border:1px solid #e74c3d;color:#e74c3d;}
+            }
+        }
+        .f-text {
+            overflow: hidden;margin-top:20px;padding-left: 12px;
+            textarea {
+                width:940px;height:180px;border:1px solid #dcdcdc;border-radius: 2px;padding:15px;color:#999;font-size: 14px;font-weight: normal;
+            }
+        }
+        .f-phone {
+            font-size: 14px;margin-top:20px;padding-left:12px;
+            .phone {
+                width:300px;height: 40px;line-height: 40px;border:1px solid #dcdcdc;border-radius: 2px;padding-left:5px;color:#999;
+            }
+        }
+        .input-file-item {
+           float: left;overflow: hidden;margin-top:20px;padding-left:12px;position: relative;
+            .input-file-bg {
+                display: block;
+                width:140px;
+                height: 140px;
+                background: url(img/addPicbg.png) no-repeat;
+            }
+            .input-file {
+                width:140px;
+                height: 140px;
+                opacity: 0;
+                position: absolute;
+                left: 12px;
+                top:0;
+                z-index: 10;
+                cursor: pointer;
+            }
+            
+        }
+        #gImgs  {
+            float:left;width:140px;height: 140px;border:1px solid #dcdcdc;margin-top:20px;margin-left:12px;display: none;
+            img {width:140px;height: 140px;}
+        }
+        .btnSubmit {
+            overflow: hidden;margin-top:20px;padding-left: 12px;
+            button {
+                width:120px;height: 36px;line-height: 36px;border-radius: 2px;background: #3bafda;color:#fff;font-size: 14px;text-align: center;border:0;
+            }
+        }
+        .timesOne {color: #999;line-height: 80px;padding-left: 12px;}
+    }
+    .feedback-finish {
+        text-align: center;padding:50px 0 20px;
+        .t-finish-title {line-height: 70px; font-size: 16px;color:#e74c3c;}
+        .t-finish-tips {
+            font-size: 14px;color: #999;padding-top:20px;
+            a {color:#1e89e0;padding-left:10px;}
+            em {color:#e74c3c;}
+        }
+    }
+}

@@ -67,33 +67,33 @@ nav.get = function (url, callback) {
     if ($(nav.opt.item).length > 0) {
         return;
     }
-    $.ajax({
-        url: _url,
-        type: 'GET',
-        dataType: 'json',
-        success: function (result) {
-            console.log(result);
-            if (result.data.length <= 0) {
-                return;
-            }
-            var _item = [],
-                _tpl = '<ul>',
-                _sub = '',
-                _con = result.data;
-            $.each(_con, function (k, v) {
-                _tpl += '<li class="category-item item'+ v.id +'" data-id="' + v.id + '">' 
-                    + '<h3>' + v.name + ' <i class="icon icon-arrow-right pull-right">&gt;</i></h3>' 
-                    + '<p class="row">' + v.info + '</p></li>';
-                _sub += '<div class="category-subject" id="subject_' + v.id + '" data-id="' + v.id + '">' + v.content + '</div>';
-            });
-            _tpl += '</ul>';
-            $(_opt.items).html(_tpl);
-            $(_opt.layer).html(_sub);
-        },
-        error: function(a, b, c, d){
-            console.log(arguments);
-        }
-    });
+//    $.ajax({
+//        url: _url,
+//        type: 'GET',
+//        dataType: 'json',
+//        success: function (result) {
+//            //console.log(result);
+//            if (result.data.length <= 0) {
+//                return;
+//            }
+//            var _item = [],
+//                _tpl = '<ul>',
+//                _sub = '',
+//                _con = result.data;
+//            $.each(_con, function (k, v) {
+//                _tpl += '<li class="category-item item'+ v.id +'" data-id="' + v.id + '">' 
+//                    + '<h3>' + v.name + ' <i class="icon icon-arrow-right pull-right">&gt;</i></h3>' 
+//                    + '<p class="row">' + v.info + '</p></li>';
+//                _sub += '<div class="category-subject" id="subject_' + v.id + '" data-id="' + v.id + '">' + v.content + '</div>';
+//            });
+//            _tpl += '</ul>';
+//            $(_opt.items).html(_tpl);
+//            $(_opt.layer).html(_sub);
+//        },
+//        error: function(a, b, c, d){
+//            console.log(arguments);
+//        }
+//    });
 };
 
 nav.show = function () {
@@ -117,10 +117,10 @@ nav.sub = {
         _sub.addClass('hover').siblings().removeClass('hover');
         $(nav.opt.layer).addClass('hover');
     },
-    hide: function () {
-        $(nav.opt.item).removeClass('hover');
-        $(nav.opt.layer).removeClass('hover');
-    }
+//    hide: function () {
+//        $(nav.opt.item).removeClass('hover');
+//        $(nav.opt.layer).removeClass('hover');
+//    }
 };
 nav.init = function(o){
     $.extend(this.opt, o);
@@ -146,3 +146,22 @@ nav.init = function(o){
         nav.hide();
     });
 };
+nav.timesEnd = function(){
+    var tim = 20;
+    var timer;
+        timer = setInterval(function(){
+            tim --;
+             $('.help-end-time em').html(tim);
+            if(tim == 0){
+                $(".live-course-help").hide();
+                $('.nav-live-course-info').removeClass('hidden');
+                clearInterval(timer);
+            }
+        },1000); 
+    $('body').on('click','.live-course-help .help-close',function(){
+        var that = $(this);
+        that.parents('.live-course-help').remove();
+        $('.nav-live-course-info').removeClass('hidden');
+    });
+};
+nav.timesEnd(); 
