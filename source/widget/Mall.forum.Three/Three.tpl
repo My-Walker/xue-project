@@ -78,5 +78,5 @@
         </div>
     </div>
 
-    <link rel="import" href="../widget/Public.Forum.User/User.tpl?__inline">
+    <link rel="import" href="../widget/Public.Forum.User/Users.tpl?__inline">
 </div>
