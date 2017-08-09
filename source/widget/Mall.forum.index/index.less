@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+@font-face
+{
+  font-family: myFirstFont;
+  src: url("方正粗圆简体.ttf");
+}
+
+html{
+  body{
+    .forum-main{
+      .forum-banner{
+        width: 100%;
+        border-radius: 2px;
+        margin-bottom: 27px;
+      }
+
+      .index-content{
+        ul{
+          float: left;
+          width: 585px;
+          height: 300px;
+          margin-bottom: 20px;
+          padding-left: 6px;
+          border-radius: 2px;
+          li{
+            float: left;
+            width: 191px;
+            height: 235px;
+            margin-top: 65px;
+            text-align: center;
+            a{
+              position: relative;
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              &:hover{
+                img{
+                  animation: mymove 0.2s linear 2 ;
+                  -webkit-animation:mymove 0.2s linear 2 ;
+                }
+              }
+              @keyframes mymove
+              {
+                0% {
+                  transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  -webkit-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                }
+                25% {
+                  transform: rotate(15deg);
+                  -ms-transform: rotate(15deg);
+                  -webkit-transform: rotate(15deg);
+                  -moz-transform: rotate(15deg);
+                  -o-transform: rotate(15deg);
+                }
+                75% {
+                  transform: rotate(-15deg);
+                  -ms-transform: rotate(-15deg);
+                  -webkit-transform: rotate(-15deg);
+                  -moz-transform: rotate(-15deg);
+                  -o-transform: rotate(-15deg);
+                }
+                100% {
+                  transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  -webkit-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                }
+              }
+
+              @-webkit-keyframes mymove
+              {
+                0% {
+                  transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  -webkit-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                }
+                25% {
+                  transform: rotate(15deg);
+                  -ms-transform: rotate(15deg);
+                  -webkit-transform: rotate(15deg);
+                  -moz-transform: rotate(15deg);
+                  -o-transform: rotate(15deg);
+                }
+                75% {
+                  transform: rotate(-15deg);
+                  -ms-transform: rotate(-15deg);
+                  -webkit-transform: rotate(-15deg);
+                  -moz-transform: rotate(-15deg);
+                  -o-transform: rotate(-15deg);
+                }
+                100% {
+                  transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  -webkit-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                }
+              }
+              img{
+                display: block;
+                margin: 25px auto 0;
+              }
+              p{
+                position: absolute;
+                bottom: 56px;
+                width: 191px;
+                text-align: center;
+                font-family:myFirstFont !important;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .index-model-first{
+          a p{
+            color: #7e6111;
+          }
+          background: url("img/indexPrimarySchool.png");
+          li{
+            background: url("img/index1.png");
+            &:hover{
+              margin-top: 63px;
+              background: url("img/indexHover1.png");
+            }
+          }
+        }
+        .index-model-second{
+          a p{
+            color: #09664f;
+          }
+          float: right;
+          background: url("img/indexPrimarySchoolH.png");
+          li{
+            background: url("img/index2.png");
+            &:hover{
+              margin-top: 63px;
+              background: url("img/indexHover2.png");
+            }
+          }
+        }
+        .index-model-third{
+          a p{
+            color: #6b28b8;
+          }
+          background: url("img/indexJuniorMiddleSchool.png");
+          li{
+            background: url("img/index3.png");
+            &:hover{
+              margin-top: 63px;
+              background: url("img/indexHover3.png");
+            }
+          }
+        }
+        .index-model-fourth{
+          a p{
+            color: #8e1543;
+          }
+          float: right;
+          background: url("img/indexHighSchool.png");
+          li{
+            background: url("img/index4.png");
+            &:hover{
+              margin-top: 63px;
+              background: url("img/indexHover4.png");
+            }
+          }
+        }
+      }
+
+      .index-footer{
+        float: left;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 27px;
+        background: url("img/indexFooter.png");
+        p{
+          width: 152px;
+          height: 64px;
+          margin: 50px 0 0 145px;
+          text-align: center;
+          line-height: 64px;
+          font-family: myFirstFont;
+          font-size: 18px;
+          color: #0c6476;
+          background: url("img/indexFooterBtn.png") no-repeat;
+          &:hover{
+            background: url("img/indexFooterBtnHover.png") no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
