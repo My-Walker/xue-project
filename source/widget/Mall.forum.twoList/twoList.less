@@ -2,6 +2,7 @@
 html{
   body{
     .forum-main{
+      margin: -23px auto 0;
       .forum-content{
         float: left;
         width: 920px;
@@ -38,7 +39,7 @@ html{
                 bottom: -50px;
                 width: 100%;
                 height: 50px;
-                line-height: 50px; 
+                line-height: 50px;
                 padding:0 10px;
                 color:#ffffff;
                 font-size: 12px;
@@ -56,6 +57,7 @@ html{
                 h5{
                   display: inline-block;
                   width: 160px;
+                  line-height: 50px;
                 }
                 .info-data{
                   float: right;
@@ -72,8 +74,12 @@ html{
             }
             .forum-model-info-title{
               width: 410px;
+              height: 18px;
               margin: 20px auto 0;
-              font-size: 16px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              font-size: 18px;
               color: #333333;
             }
             .forum-model-info-text{
@@ -84,74 +90,6 @@ html{
               text-overflow: ellipsis;
               font-size: 14px;
               color: #a4a9ae;
-            }
-          }
-        }
-      }
-      .forum-user{
-        float: right;
-        width: 270px;
-        .forum-user-basic{
-          height: 303px;
-          margin-top: 20px;
-          text-align: center;
-          border: 1px solid #e5e6e9;
-          border-bottom: 4px solid #e3e4e8;
-          border-radius: 3px;
-          background: #ffffff;
-          img{
-            width: 100px;
-            height: 100px;
-            margin: 30px 0 13px;
-            border-radius: 50%;
-          }
-          h3{
-            font-size: 18px;
-            color: #a4a9ae;
-          }
-          ul{
-            height: 80px;
-            margin-top: 30px;
-            font-size: 14px;
-            li{
-              float: left;
-              width: 89px;
-              height: 100%;
-              a{
-                display: inline-block;
-                width: 70%;
-                height: 100%;
-                padding-top: 63px;
-                color: #848e98;
-                background: url("img/userIcon.png");
-              }
-            }
-            .my-collection{
-              a{
-                background-position: -1px -22px;
-                &:hover{
-                  color: #4fc1e9;
-                  background-position: -1px 65px;
-                }
-              }
-            }
-            .my-evaluate{
-              a{
-                background-position: -92px -22px;
-                &:hover{
-                  color: #4fc1e9;
-                  background-position: -92px 65px;
-                }
-              }
-            }
-            .my-browse-log{
-              a{
-                background-position: 65px -22px;
-                &:hover{
-                  color: #4fc1e9;
-                  background-position: 65px 65px;
-                }
-              }
             }
           }
         }

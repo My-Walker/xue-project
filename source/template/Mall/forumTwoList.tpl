@@ -1,11 +1,12 @@
 <!-- 公共头部 -->
-<link rel="import" href="../Layer/layer.Mall.head.tpl?__inline">
+<link rel="import" href="../../widget/Public.Forum.Header/index.tpl?__inline">
 
 <!-- 学习中心区域 -->
 <div class="container">
     <ol id="module-breadcrumb" class="breadcrumb">
-        <li><a href="#">课程分类</a></li>
-        <li class="active">三年级</li>
+        <li><a href="#">学社团</a></li>
+        <li><a href="#">父模块名称</a></li>
+        <li class="active">最新活动</li>
     </ol>
 
 	<link rel="import" href="../../widget/Mall.forum.twoList/twoList.tpl?__inline">
@@ -28,14 +29,14 @@
                type: "get",
                url: "/MyOrders/ajaxOrderList",
                dataType: "html",
-               data:'type=' + ordertype + '&curpage=' + index, 
+               data:'type=' + ordertype + '&curpage=' + index,
                success: function(list){
                    var box = $('#page_list');
                    box.html(list);
                },
-               error:function(){  
-                   alert("异步失败");  
-               }  
+               error:function(){
+                   alert("异步失败");
+               }
            });*/
 	    }
 	});
