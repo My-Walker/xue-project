@@ -1,9 +1,22 @@
 <!--
     @require index.less
     @require ../Mall.Forum.twoList/forumStyle.less
+    @require slider.css
 -->
 <div class="forum-main">
-    <img class="forum-banner" src="img/indexBanner.png" alt="">
+    <div id="demo01" class="flexslider forum-banner">
+        <ul class="slides">
+
+            <li><div class="img"><img src="img/indexBanner1.png" width="100%" alt="" /></div></li>
+
+            <li><div class="img"><img src="img/indexBanner1.png" width="100%" alt="" /></div></li>
+
+            <li><div class="img"><img src="img/indexBanner1.png" width="100%" alt="" /></div></li>
+
+            <li><div class="img"><img src="img/indexBanner1.png" width="100%" alt="" /></div></li>
+
+        </ul>
+    </div>
 
     <div class="index-content">
         <ul class="index-model-first">
@@ -56,3 +69,29 @@
         <p>技术交流社</p>
     </div>
 </div>
+
+<script type="text/javascript" src="slider.js"></script>
+
+<script type="text/javascript">
+
+    $(function(){
+
+        $('#demo01').flexslider({
+
+            animation: "slide",
+
+            direction:"horizontal",
+
+            easing:"swing"
+
+        });
+
+    });
+   /* animation: "slide", //转换方式 fade淡入淡出 slide滚动
+        direction:"horizontal", //滚动方向 horizontal左右 vertical上下
+        slideshowSpeed: 3000, //停留时间
+        directionNav: true, //是否显示左右控制按钮 true&false
+        controlNav: true, //是否显示下方控制按钮 true&false
+        mousewheel: false, //是否允许鼠标控制滚动 true&fals*/
+</script>
+

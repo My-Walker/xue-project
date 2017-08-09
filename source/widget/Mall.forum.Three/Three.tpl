@@ -16,13 +16,19 @@
                 <img src="img/content.png" alt="">
                 本次大赛以盼望”、“奇妙”、“伙伴”为主题，学生可任选其一写作，提倡的是全员参与，提出了具体的要求，成立了专业的评审团队，设置了丰富的奖项，相信会在博雅校内激起一阵爱写作、乐写作的涟漪。
             </div>
+            <div class="article-toolbar">
+                <i class="thumbs-up">点赞 3200</i>
+                <i class="share">分享</i>
+                <i class="collection">收藏</i>
+                <i class="leaving-message">留言</i>
+            </div>
         </div>
 
         <div class="forum-comment">
             <h5>精选留言</h5>
             <div class="write-comment">
                 <input type="text" placeholder="写留言">
-                <button class="btn btn-default">发表</button>
+                <button class="btn btn-default"  disabled="disabled">发表</button>
             </div>
             <ul>
                 <li>
@@ -68,7 +74,7 @@
                 </li>
             </ul>
             <p class="verification">以上留言均经过筛选展示</p>
-            <button class="btn btn-info">查看更多留言</button>
+            <button class="btn btn-info more-message">查看更多留言</button>
         </div>
     </div>
 

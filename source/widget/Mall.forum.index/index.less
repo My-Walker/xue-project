@@ -10,9 +10,13 @@ html{
   body{
     .forum-main{
       .forum-banner{
+        position: relative;
         width: 100%;
+        height: 300px;
         border-radius: 2px;
         margin-bottom: 27px;
+        overflow: hidden;
+        zoom: 1;
       }
 
       .index-content{
@@ -50,18 +54,18 @@ html{
                   -o-transform: rotate(0deg);
                 }
                 25% {
-                  transform: rotate(15deg);
-                  -ms-transform: rotate(15deg);
-                  -webkit-transform: rotate(15deg);
-                  -moz-transform: rotate(15deg);
-                  -o-transform: rotate(15deg);
+                  transform: rotate(5deg);
+                  -ms-transform: rotate(5deg);
+                  -webkit-transform: rotate(5deg);
+                  -moz-transform: rotate(5deg);
+                  -o-transform: rotate(5deg);
                 }
                 75% {
-                  transform: rotate(-15deg);
-                  -ms-transform: rotate(-15deg);
-                  -webkit-transform: rotate(-15deg);
-                  -moz-transform: rotate(-15deg);
-                  -o-transform: rotate(-15deg);
+                  transform: rotate(-5deg);
+                  -ms-transform: rotate(-5deg);
+                  -webkit-transform: rotate(-5deg);
+                  -moz-transform: rotate(-5deg);
+                  -o-transform: rotate(-5deg);
                 }
                 100% {
                   transform: rotate(0deg);
@@ -82,18 +86,18 @@ html{
                   -o-transform: rotate(0deg);
                 }
                 25% {
-                  transform: rotate(15deg);
-                  -ms-transform: rotate(15deg);
-                  -webkit-transform: rotate(15deg);
-                  -moz-transform: rotate(15deg);
-                  -o-transform: rotate(15deg);
+                  transform: rotate(5deg);
+                  -ms-transform: rotate(5deg);
+                  -webkit-transform: rotate(5deg);
+                  -moz-transform: rotate(5deg);
+                  -o-transform: rotate(5deg);
                 }
                 75% {
-                  transform: rotate(-15deg);
-                  -ms-transform: rotate(-15deg);
-                  -webkit-transform: rotate(-15deg);
-                  -moz-transform: rotate(-15deg);
-                  -o-transform: rotate(-15deg);
+                  transform: rotate(-5deg);
+                  -ms-transform: rotate(-5deg);
+                  -webkit-transform: rotate(-5deg);
+                  -moz-transform: rotate(-5deg);
+                  -o-transform: rotate(-5deg);
                 }
                 100% {
                   transform: rotate(0deg);
@@ -109,7 +113,7 @@ html{
               }
               p{
                 position: absolute;
-                bottom: 56px;
+                bottom: 57px;
                 width: 191px;
                 text-align: center;
                 font-family:myFirstFont !important;
@@ -189,6 +193,7 @@ html{
           font-family: myFirstFont;
           font-size: 18px;
           color: #0c6476;
+          cursor: pointer;
           background: url("img/indexFooterBtn.png") no-repeat;
           &:hover{
             background: url("img/indexFooterBtnHover.png") no-repeat;
