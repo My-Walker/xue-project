@@ -2,9 +2,6 @@
 html{
   body{
     .forum-main{
-      .forum-user .forum-user-basic{
-        margin-top: 0;
-      }
       .forum-three-content{
         float: left;
         width: 900px;
@@ -41,14 +38,9 @@ html{
             }
           }
           .article-toolbar{
-            position: fixed;
-            bottom: 2px;
             width: 898px;
             height: 50px;
             line-height: 50px;
-            background: #fcfcfc;
-            border-bottom: 1px solid #f1f2f6;
-            border-top: 1px solid #f1f2f6;
             i{
               display: inline-block;
               margin-left: 50px;
@@ -59,12 +51,66 @@ html{
               font-size: 14px;
               color: #999999;
             }
+            .reading{
+              margin-left: 30px;
+              font-size: 14px;
+              color: #999999;
+            }
             .thumbs-up{
-              margin-left: 475px;
+              width: 128px;
+              margin-left: 470px;
               background: url(img/forumThreeIcon.png) 0 0;
             }
             .share{
+              position: relative;
+              margin-left: 10px;
               background: url(img/forumThreeIcon.png) -134px 0;
+
+              .share-div{
+                display: none;
+                position: absolute;
+                bottom: 40px;
+                right: -95px;
+                width: 226px;
+                height: 57px;
+                line-height: 48px;
+                background: url("img/shareBg.png");
+                li{
+                  float: left;
+                  width: 33.3%;
+                  text-align: center;
+                  img{
+                    cursor: pointer;
+                    &:hover{
+                      opacity: 0.5;
+                    }
+                  }
+                }
+                .shareWeixin{
+                  position: relative;
+                  .codeQR{
+                    display: none;
+                    position: absolute;
+                    bottom: 50px;
+                    left: -64px;
+                    width: 204px;
+                    height: 204px;
+                    padding: 15px;
+                    background: #fbfbfb;
+                    border: 1px solid #e5e6e9;
+                  }
+
+                  &:hover{
+                    .codeQR{
+                      display: block;
+                      opacity: 1;
+                    }
+                  }
+                }
+              }
+              .share-div-show{
+                display: block;
+              }
             }
             .collection{
               background: url(img/forumThreeIcon.png) 161px 0;
@@ -72,6 +118,14 @@ html{
             .leaving-message{
               background: url(img/forumThreeIcon.png) 61px 0;
             }
+          }
+          .article-toolbar-fixed{
+            position: fixed;
+            bottom: 0px;
+            z-index: 999;
+            background: #fcfcfc;
+            border-bottom: 1px solid #f1f2f6;
+            border-top: 1px solid #f1f2f6;
           }
         }
 
@@ -167,6 +221,13 @@ html{
                 em{
                   font-size: 12px;
                   color: #999999;
+                }
+                span{
+                  float: right;
+                  margin-right: 20px;
+                  font-size: 14px;
+                  color: #999999;
+                  cursor: pointer;
                 }
                 strong{
                   float: right;

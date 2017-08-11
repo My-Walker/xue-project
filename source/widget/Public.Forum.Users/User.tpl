@@ -12,3 +12,23 @@
         </ul>
     </div>
 </div>
+
+<script type="text/javascript">
+    //用户模块定位
+    function userModel() {
+        if(window.scrollY > 133){
+            var right = (document.body.clientWidth - 1190)/2 + "px";
+            $(".forum-user").css({"position": "fixed","right":right,"top":"3px"});
+        }else {
+            $(".forum-user").css({"position": "absolute","right":0,"top":"0px"});
+        }
+    }
+    $(window).scroll(function(){
+        userModel()
+    });
+
+    $(window).resize(function(){
+        userModel()
+    });
+
+</script>
