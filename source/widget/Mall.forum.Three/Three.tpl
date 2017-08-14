@@ -75,7 +75,7 @@
                 <input type="text" placeholder="写留言">
                 <button class="btn btn-default"  disabled="disabled">发表</button>
             </div>
-            <ul>
+            <ul class="comment-main-list">
                 <li>
                     <div class="img-div-header">
                         <img src="img/header.png" alt="">

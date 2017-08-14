@@ -2,6 +2,105 @@
 html{
   body{
     .forum-main{
+      .comment-main-list{
+        display: inline-block;
+        width: 100%;
+        padding-bottom: 1px;
+        border-top: 1px solid #e5e6e9;
+        border-bottom: 1px solid #e5e6e9;
+        li{
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          border-bottom: 1px solid #e5e6e9;
+          padding: 30px 0;
+          font-size: 14px;
+          color: #666666;
+          &:last-child{
+            border-bottom: none;
+          }
+          .img-div-header{
+            &:before{
+              content: ' ';
+              position: absolute;
+              height: 1px;
+              width: 85px;
+              bottom: -1px;
+              z-index: 999;
+              background: #fff;
+            }
+            img{
+              float: left;
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+            }
+          }
+          .comment-content{
+            float: right;
+            width: 753px;
+            h5{
+              float: left;
+              margin-right: 15px;
+              font-size: 16px;
+              color: #333333;
+            }
+            em{
+              font-size: 12px;
+              color: #999999;
+            }
+            span{
+              float: right;
+              margin-right: 20px;
+              font-size: 14px;
+              color: #999999;
+              cursor: pointer;
+            }
+            strong{
+              float: right;
+              min-width: 30px;
+              font-size: 14px;
+              color: #999999;
+              text-align: center;
+            }
+            i{
+              float: right;
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              margin-top: -2px;
+              background: url("img/forumThreeIcon.png");
+              cursor: pointer;
+            }
+            .agree{
+              background-position: 0 0;
+            }
+            .agreed{
+              background-position: 0 19px;
+            }
+            p{
+              margin-top: 15px;
+            }
+            .user-comment-content{
+              padding-bottom: 35px;
+            }
+            .master-comment-content{
+              h5{
+                position: relative;
+                padding-left: 5px;
+                &:before{
+                  content: ' ';
+                  position: absolute;
+                  left: 0;
+                  width: 3px;
+                  height: 16px;
+                  background: #4fc1e9;
+                }
+              }
+            }
+          }
+        }
+      }
       .forum-three-content{
         float: left;
         width: 900px;
@@ -173,105 +272,6 @@ html{
               border-radius: 2px;
               color: #FFFFFF;
               background: #dcdde0;
-            }
-          }
-          ul{
-            display: inline-block;
-            width: 100%;
-            padding-bottom: 1px;
-            border-top: 1px solid #e5e6e9;
-            border-bottom: 1px solid #e5e6e9;
-            li{
-              position: relative;
-              display: inline-block;
-              width: 100%;
-              border-bottom: 1px solid #e5e6e9;
-              padding: 30px 0;
-              font-size: 14px;
-              color: #666666;
-              &:last-child{
-                border-bottom: none;
-              }
-              .img-div-header{
-                &:before{
-                  content: ' ';
-                  position: absolute;
-                  height: 1px;
-                  width: 85px;
-                  bottom: -1px;
-                  z-index: 999;
-                  background: #fff;
-                }
-                img{
-                  float: left;
-                  width: 60px;
-                  height: 60px;
-                  border-radius: 50%;
-                }
-              }
-              .comment-content{
-                float: right;
-                width: 753px;
-                h5{
-                  float: left;
-                  margin-right: 15px;
-                  font-size: 16px;
-                  color: #333333;
-                }
-                em{
-                  font-size: 12px;
-                  color: #999999;
-                }
-                span{
-                  float: right;
-                  margin-right: 20px;
-                  font-size: 14px;
-                  color: #999999;
-                  cursor: pointer;
-                }
-                strong{
-                  float: right;
-                  min-width: 30px;
-                  font-size: 14px;
-                  color: #999999;
-                  text-align: center;
-                }
-                i{
-                  float: right;
-                  display: inline-block;
-                  width: 18px;
-                  height: 18px;
-                  margin-top: -2px;
-                  background: url("img/forumThreeIcon.png");
-                  cursor: pointer;
-                }
-                .agree{
-                  background-position: 0 0;
-                }
-                .agreed{
-                  background-position: 0 19px;
-                }
-                p{
-                  margin-top: 15px;
-                }
-                .user-comment-content{
-                  padding-bottom: 35px;
-                }
-                .master-comment-content{
-                  h5{
-                    position: relative;
-                    padding-left: 5px;
-                    &:before{
-                      content: ' ';
-                      position: absolute;
-                      left: 0;
-                      width: 3px;
-                      height: 16px;
-                      background: #4fc1e9;
-                    }
-                  }
-                }
-              }
             }
           }
           .verification{
