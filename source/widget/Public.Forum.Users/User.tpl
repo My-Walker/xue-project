@@ -16,11 +16,13 @@
 <script type="text/javascript">
     //用户模块定位
     function userModel() {
-        if(window.scrollY > 133){
-            var right = (document.body.clientWidth - 1190)/2 + "px";
+        var top,right;
+        if(window.scrollY > 133 && document.body.clientWidth>1280){
+            right = (document.body.clientWidth - 1190)/2 + "px";
             $(".forum-user").css({"position": "fixed","right":right,"top":"3px"});
         }else {
-            $(".forum-user").css({"position": "absolute","right":0,"top":"0px"});
+            window.scrollY < 133 ? top = "0px" : top = window.scrollY-133 + "px";
+            $(".forum-user").css({"position": "absolute","right":0,"top":top});
         }
     }
     $(window).scroll(function(){
