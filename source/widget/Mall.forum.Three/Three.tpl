@@ -72,8 +72,8 @@
         <div class="forum-comment">
             <h5>精选留言</h5>
             <div class="write-comment">
-                <input type="text" placeholder="写留言">
-                <button class="btn btn-default"  disabled="disabled">发表</button>
+                <input id="commentValue" type="text" placeholder="写留言" autoComplete='off'>
+                <button id="commentBtn" class="btn btn-default" disabled="disabled">发表</button>
             </div>
             <ul class="comment-main-list">
                 <li>
@@ -167,8 +167,20 @@
     $(".share-div").mouseleave(function () {
         $(this).removeClass("share-div-show")
     })
-
+    //删除点击弹层
     $(".forum-delete").click(function () {
         $('#myModal').modal('hide')
+    })
+    //监听留言输入框
+    $(function(){
+        $('#commentValue').bind('input propertychange', function() {
+            if($(this).val().length>0){
+                $("#commentBtn").css("background","#4fc1e9");
+                $("#commentBtn").removeAttr("disabled");
+            }else {
+                $("#commentBtn").css("background","#dcdde0");
+                $("#commentBtn").attr("disabled","disabled");
+            }
+        });
     })
 </script>
