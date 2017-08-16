@@ -1,0 +1,88 @@
+#T_upload{
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    .uploading-img{
+        ul{
+            float: left;
+            width: 100%;
+            margin: 10px 0;
+            li{
+                float: left;
+                position: relative;
+                width: 80px;
+                height: 80px;
+                margin-right: 10px;
+                text-align: center;
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+                .uploading-tip{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    .onDelPic{
+                        display: block;
+                        width: 18px;
+                        height: 18px;
+                        background: url("img/onDelPic.png");
+                        &:hover{
+                            background: url("img/onDelPicHover.png");
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .uploading-imgInput{
+        position: absolute;
+        top: -17px;
+        left: 65px;
+        .andArea{
+            float: left;
+            position: relative;
+            width: 19px;
+            height: 16px;
+            overflow: hidden;
+            cursor: pointer;
+            input{
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                top: 0;
+                left: 0;
+                opacity: 0;
+            }
+            .filePicker{
+                width: 19px;
+                height: 16px;
+                background: url("img/picture.png");
+            }
+        }
+        p{
+            float: left;
+            margin-left: 10px;
+            line-height: 17px;
+            font-size: 12px;
+            color: #999999;
+            strong{
+                font-size: 14px;
+            }
+            em{
+                color: #328dde;
+            }
+        }
+    }
+}
+.face{
+    float: left;
+    line-height: 17px;
+    margin-right: 20px;
+    padding-left: 23px;
+    color: #999999;
+    font-size: 14px;
+    background: url("img/face.png") no-repeat;
+    cursor: pointer;
+}

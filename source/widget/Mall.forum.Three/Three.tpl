@@ -73,10 +73,12 @@
             <h5>精选留言</h5>
             <div class="write-comment">
                 <input id="commentValue" type="text" placeholder="写留言" autoComplete='off'>
-                <button id="commentBtn" class="btn btn-default" disabled="disabled">发表</button>
+                <button  id="uploadFile" class="btn btn-default" disabled="disabled">发表</button>
+
+                <link rel="import" href="../widget/Public.Forum.picture/index.tpl?__inline">
             </div>
             <ul class="comment-main-list">
-                <li>
+                <li class="del-1">
                     <div class="img-div-header">
                         <img src="img/header.png" alt="">
                     </div>
@@ -87,7 +89,7 @@
 
                             <strong>312</strong>
                             <i class="agree"></i>
-                            <span data-toggle="modal" data-target="#myModal">删除</span>
+                            <span data-toggle="modal" data-target="#myModal" onclick="delFn(123,1)">删除</span>
 
                             <p>本次大赛以盼望”、“奇妙”、“伙伴”为主题，学生可任选其一写作，提倡的是全员参与，提出了具体的要求，成立了专业的评审团队。</p>
                         </div>
@@ -102,7 +104,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="del-2">
                     <div class="img-div-header">
                         <img src="img/header.png" alt="">
                     </div>
@@ -140,12 +142,16 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary forum-delete">确定</button>
+                <button type="button" id="dataId" class="btn btn-primary forum-delete" data-dismiss="modal">确定</button>
             </div>
         </div>
     </div>
 </div>
 <script type="text/javascript">
+    function delFn(dataid,index) {
+        $("#dataId").attr("data-id",dataid);
+        $("#dataId").attr("data-index",index);
+    }
     //监听滚动条
     $(window).scroll(function(){
         if(window.scrollY > $(".forum-comment").offset().top - window.innerHeight){
@@ -169,17 +175,29 @@
     })
     //删除点击弹层
     $(".forum-delete").click(function () {
-        $('#myModal').modal('hide')
+        var del = ".del-" + $("#dataId").attr("data-index");
+        /*$.ajax({
+             type: "get",
+             url: "/MyOrders/ajaxOrderList",
+             dataType: "json",
+             data:'type=' + ordertype + '&curpage=' + index,
+             success: function(list){
+                $(del).remove();
+             },
+             error:function(){
+                alert("删除失败");
+             }
+        });*/
     })
     //监听留言输入框
     $(function(){
         $('#commentValue').bind('input propertychange', function() {
             if($(this).val().length>0){
-                $("#commentBtn").css("background","#4fc1e9");
-                $("#commentBtn").removeAttr("disabled");
+                $("#uploadFile").css("background","#4fc1e9");
+                $("#uploadFile").removeAttr("disabled");
             }else {
-                $("#commentBtn").css("background","#dcdde0");
-                $("#commentBtn").attr("disabled","disabled");
+                $("#uploadFile").css("background","#dcdde0");
+                $("#uploadFile").attr("disabled","disabled");
             }
         });
     })
