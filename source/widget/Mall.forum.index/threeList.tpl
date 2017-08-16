@@ -1,6 +1,5 @@
 <!--
-    @require Three.less
-    @require ../Mall.Forum.twoList/forumStyle.less
+    @require css/index.less
 -->
 
 <div class="forum-main">
@@ -75,7 +74,7 @@
                 <input id="commentValue" type="text" placeholder="写留言" autoComplete='off'>
                 <button  id="uploadFile" class="btn btn-default" disabled="disabled">发表</button>
 
-                <link rel="import" href="../widget/Public.Forum.picture/index.tpl?__inline">
+                <link rel="import" href="picture.tpl?__inline">
             </div>
             <ul class="comment-main-list">
                 <li class="del-1">
@@ -126,7 +125,7 @@
         </div>
     </div>
 
-    <link rel="import" href="../widget/Public.Forum.Users/User.tpl?__inline">
+    <link rel="import" href="user.tpl?__inline">
 </div>
 
 <!-- Modal -->

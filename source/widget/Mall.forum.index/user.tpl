@@ -1,5 +1,5 @@
 <!--
-    @require User.less
+    @require css/index.less
 -->
 <div class="forum-user">
     <div class="forum-user-basic">

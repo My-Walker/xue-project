@@ -1,7 +1,6 @@
 <!--
-    @require index.less
-    @require ../Mall.Forum.twoList/forumStyle.less
-    @require slider.css
+    @require css/index.less
+    @require css/slider.css
 -->
 <div class="forum-main">
     <div id="demo01" class="flexslider forum-banner">
@@ -70,7 +69,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="slider.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
 
 <script type="text/javascript">
 

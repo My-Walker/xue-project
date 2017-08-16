@@ -1,5 +1,5 @@
 <!--
-    @require picture.less
+    @require css/index.less
 -->
 <div class="up-form-div">
     <p class="face">表情</p>
@@ -8,8 +8,8 @@
     </div>
 </div>
 
-<script src="jquery.min.js"></script>
-<script src="picture.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/picture.js"></script>
 <script type="text/javascript">
     $(function() {
         var md = "product";
