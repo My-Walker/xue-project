@@ -1,8 +1,6 @@
 <!--
     @require ../Module.Pagination/paginations.js
-    @require ../Mall.Forum.myCollection/index.less
-    @require ../Mall.Forum.twoList/forumStyle.less
-    @require index.less
+    @require css/index.less
 -->
 <div class="forum-main">
     <div class="forum-model-content">
@@ -48,5 +46,31 @@
 
     </div>
 
-    <link rel="import" href="../widget/Public.Forum.Users/User.tpl?__inline">
+    <link rel="import" href="user.tpl?__inline">
 </div>
+
+<style type="text/css">
+    html body .forum-main .forum-model-content .forum-collection-list .forum-collection-model{
+        height: auto;
+        padding: 0 30px;
+    }
+    html body .forum-main .forum-model-content .forum-collection-list .forum-collection-model ul li{
+        height: 225px;
+        padding: 30px 0;
+        border-bottom: 1px dashed #e5e6e9;
+    }
+    html body .forum-main .forum-model-content .forum-collection-list .forum-collection-model ul li:last-child{
+        border-bottom: none;
+    }
+    html body .forum-main .forum-model-content .forum-collection-list .forum-collection-model .title{
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color:#999999;
+        font-size: 16px;
+        border-bottom: 1px solid #e5e6e9;
+    }
+    html body .forum-main .forum-model-content .forum-model-title h5{
+        background: url(img/browseLogTitle.png) no-repeat;
+    }
+</style>

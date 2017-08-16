@@ -1,9 +1,6 @@
 <!--
     @require ../Module.Pagination/paginations.js
-    @require ../Mall.Forum.myCollection/index.less
-    @require ../Mall.Forum.twoList/forumStyle.less
-    @require ../Mall.Forum.Three/Three.less
-    @require index.less
+    @require css/index.less
 -->
 <div class="forum-main">
     <div class="forum-model-content">
@@ -137,7 +134,7 @@
 
     </div>
 
-    <link rel="import" href="../widget/Public.Forum.Users/User.tpl?__inline">
+    <link rel="import" href="user.tpl?__inline">
 </div>
 
 <!-- Modal -->
@@ -159,6 +156,28 @@
     </div>
 </div>
 
+<style type="text/css">
+    html body .forum-main .forum-model-content .forum-collection-list .forum-collection-model{
+        height: auto;
+    }
+    html body .forum-main .forum-model-content .forum-collection-list .forum-collection-model li .img-div-header img{
+        float: left;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    html body .forum-main .comment-main-list{
+        margin-top: 30px;
+        border-top: 1px dashed #e5e6e9;
+        border-bottom: none;
+    }
+    html body .forum-main .forum-model-content .forum-collection-list .forum-collection-model{
+        padding-bottom: 0;
+    }
+    html body .forum-main .forum-model-content .forum-model-title h5{
+        background: url(img/comment.png) no-repeat;
+    }
+</style>
 <script type="text/javascript">
     $(".forum-delete").click(function () {
         $('#myModal').modal('hide')

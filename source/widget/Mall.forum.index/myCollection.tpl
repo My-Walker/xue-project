@@ -1,7 +1,6 @@
 <!--
     @require ../Module.Pagination/paginations.js
-    @require index.less
-    @require ../Mall.Forum.twoList/forumStyle.less
+    @require css/index.less
 -->
 <div class="forum-main">
     <div class="forum-model-content">
@@ -42,5 +41,5 @@
 
     </div>
 
-    <link rel="import" href="../widget/Public.Forum.Users/User.tpl?__inline">
+    <link rel="import" href="user.tpl?__inline">
 </div>

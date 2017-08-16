@@ -1,7 +1,6 @@
 <!--
     @require ../Module.Pagination/paginations.js
-    @require twoList.less
-    @require forumStyle.less
+    @require css/index.less
 -->
 <div class="forum-main">
     <div class="forum-content">
@@ -97,5 +96,13 @@
 
     </div>
 
-    <link rel="import" href="../widget/Public.Forum.Users/User.tpl?__inline">
+    <link rel="import" href="user.tpl?__inline">
 </div>
+<style type="text/css">
+    html body .forum-main {
+        margin: -23px auto 0;
+    }
+    .forum-user .forum-user-basic{
+        margin-top: 20px;
+    }
+</style>

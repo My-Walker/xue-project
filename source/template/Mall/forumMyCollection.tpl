@@ -1,5 +1,5 @@
 <!-- 公共头部 -->
-<link rel="import" href="../../widget/Public.Forum.Header/index.tpl?__inline">
+<link rel="import" href="../../widget/Mall.forum.index/header.tpl?__inline">
 
 <!-- 学习中心区域 -->
 <div class="container">
@@ -9,7 +9,7 @@
         <li class="active">最新活动</li>
     </ol>
 
-	<link rel="import" href="../../widget/Mall.forum.myCollection/index.tpl?__inline">
+	<link rel="import" href="../../widget/Mall.forum.index/myCollection.tpl?__inline">
 </div>
 <!-- 页面配置 -->
 <script>

@@ -1,8 +1,6 @@
 <!--
     @require ../Module.Pagination/paginations.js
-    @require ../Mall.Forum.twoList/forumStyle.less
-    @require ../Mall.Forum.Three/Three.less
-    @require index.less
+    @require css/index.less
 -->
 <div class="forum-main">
     <div class="forum-model-content">
@@ -145,7 +143,7 @@
         </div>
     </div>
 
-    <link rel="import" href="../widget/Public.Forum.Users/User.tpl?__inline">
+    <link rel="import" href="user.tpl?__inline">
 </div>
 
 <!-- Modal -->
@@ -167,6 +165,32 @@
     </div>
 </div>
 
+<style type="text/css">
+    html body .forum-main .article-title{
+        height: 145px;
+        border: 1px solid #e5e6e9;
+        border-bottom: 4px solid #e3e4e8;
+        border-radius: 3px;
+        background: #ffffff;
+    }
+    .comment-list{
+        margin-top: 15px;
+        padding: 0 30px 20px;
+        background: #FFFFFF;
+    }
+    .comment-list .verification{
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 16px;
+        color: #999999;
+    }
+    .comment-list .last-comment{
+        height: 42px;
+        line-height: 42px;
+        font-size: 14px;
+    }
+</style>
 <script type="text/javascript">
     $(".forum-delete").click(function () {
         $('#myModal').modal('hide')

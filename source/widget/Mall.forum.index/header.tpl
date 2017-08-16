@@ -19,11 +19,11 @@
 </head>
 
 <!--
-    @require style.less
+    @require css/index.less
 -->
 <div class="forum-module-header">
     <div class="forum-header-content">
-        <a class="logo" href="http://reg.xueersi.com/reg/aHR0cDovL3d3dy54dWVlcnNpLmNvbS8="><img src="logo.png" alt=""></a>
+        <a class="logo" href="http://reg.xueersi.com/reg/aHR0cDovL3d3dy54dWVlcnNpLmNvbS8="><img src="img/logo.png" alt=""></a>
         <ul class="head-nav">
             <li>
                 <a target="_blank" href="">选课程</a>
