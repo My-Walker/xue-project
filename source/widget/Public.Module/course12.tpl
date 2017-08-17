@@ -20,6 +20,7 @@
     <div class="rank-time">
 <p class="time">
     <span class="every-week">非标</span>
+    <span class="every-a-m"></span>
     <span class="every-time"><a href="http://www.xueersi.com/kc/35075-2268-6102.html" target="_blank">12:00-13:00</a></span>
     <span class="every-day"><a href="http://www.xueersi.com/kc/35075-2268-6102.html" target="_blank">02月21日-09月12日</a></span>
 </p>
@@ -55,6 +56,7 @@
     <div class="rank-time">
         <p class="time">
             <span class="every-week">周五</span>
+             <span class="every-a-m e-p-m"></span>
             <span class="every-time">
               <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">13:30-15:15 
              </a>
@@ -94,6 +96,7 @@
     <div class="rank-time">
         <p class="time">
             <span class="every-week">周五</span>
+            <span class="every-a-m e-n-m"></span>
             <span class="every-time">
               <a href="http://www.xueersi.com/kc/32445-368.html" target="_blank">13:30-15:15 
              </a>

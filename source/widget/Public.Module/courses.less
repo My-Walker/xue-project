@@ -1960,7 +1960,7 @@ ul, li {
     overflow: hidden;
     p.time {
       font-size: 16px;
-      padding: 10px 0 0 40px;
+      padding: 10px 0 0 50px;
       position: relative;
       span {
         display:block;
@@ -1968,7 +1968,7 @@ ul, li {
         &.every-time {
           a {
              color: #e74c3c;
-             font-size: 32px;
+             font-size: 30px;
              font-family:myFirstFont;
           }
         }
@@ -1985,11 +1985,25 @@ ul, li {
           color: #e74c3c;
           font-size: 14px;
           position: absolute;
-          left: 20px;
+          left: 10px;
           top:20px;
           z-index: 1;
         }
-        
+          &.every-a-m {
+              width:20px;
+              height: 20px;
+              background: url(img/a-m.png) no-repeat;
+              position: absolute;
+              left:42px;
+              top:20px;
+              z-index: 1;
+              &.e-p-m {
+                   background: url(img/p-m.png) no-repeat;background-size: 20px 20px;
+              }
+                &.e-n-m {
+                   background: url(img/n-m.png) no-repeat;background-size: 20px 20px;
+              }
+          }
       }
       &.special-time {
            padding: 18px 0 0 3px;
