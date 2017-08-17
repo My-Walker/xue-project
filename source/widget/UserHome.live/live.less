@@ -50,3 +50,179 @@
         }
     }
 }
+/*选择外教老师列表样式*/
+.select-foreign-teacher {
+    overflow: hidden;
+    .title {
+        background: #fff;
+        border-radius: 5px;
+        height: 50px;
+        text-align: left;
+        line-height: 50px;
+        font-size: 16px;
+        color: gray;
+        padding-left:5%;
+    }
+    
+    .item {
+        background: #fff;
+        text-align: left;
+        font-size: 14px;
+        margin-top: 2px;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 20px 0 20px 5%;
+        a {
+            color: #3bafda;
+        }
+        span.gray {
+            color: #999;
+        }
+        span.nonactivated {
+            color: #999;
+            img {
+                margin-top:-4px;
+                margin-right: 5px;
+            } 
+        }
+    }
+    .col-sm-3 {
+        text-align: center;
+    }
+}
+.foreign-teacher-inner {
+    overflow: hidden;
+    .foreign-teacher-titletips {
+        font-size: 14px;line-height: 180%;
+    }
+    .foreign-step {
+        width:682px;
+        height: 78px;
+        background: url(img/step-1.png) no-repeat;
+        margin:10px auto;
+        &.foreign-step-two {background: url(img/step-2.png) no-repeat;}
+         &.foreign-step-three {background: url(img/step-3.png) no-repeat;}
+    }
+    .foreign-teacher-tips {
+        font-size: 14px;
+        margin: 5px 0;
+        padding-left: 23px;
+        line-height: 26px;
+        background: url(/static/img/freeze-mark.png) no-repeat left 4px;
+        span{
+            color: #e74c3d;
+        }
+    }
+    .foreign-teacher-name {
+        font-size: 16px;
+        color: #666;
+        padding-top:20px;
+        span {
+            color: #e74c3d;
+            padding-right: 20px;
+        }
+    }
+    .foreign-teacher-btn-wrap {
+        text-align: center;
+        margin-top: 15px;
+        button.foreign-teacher-btn {
+            width: 140px;
+            height: 46px;
+            background: #e74c3c;
+            font-size: 16px;
+            line-height: 46px;
+            text-align: center;
+            display: inline-block;
+            color: #fff;
+            border-radius: 2px;
+            border: none;
+            &.disabled {
+                background: #ccd1d9;
+                cursor: default;
+            }
+            &.f-left {float: left;}
+            &.f-right {float: right;}
+        }
+    }
+    .foreign-teacher-list {
+        background: #fcfcfc;
+        overflow: hidden;
+        border-radius: 5px;
+        border:1px solid #eaeaea;
+        margin-bottom: 30px;
+        padding:0 20px 10px;
+        .foreign-list-title {
+            overflow: hidden;
+            height: 50px;
+            line-height: 50px;
+            span {
+                text-align: center;font-size: 16px;color: #666;
+            }
+        }
+        ul {
+            overflow: hidden;
+           li {
+            height: 47px;line-height: 47px;text-align: center;border:2px solid #e3e4e8;border-radius: 47px;margin-bottom: 10px;cursor: pointer;background: url(img/foreign_disable.png)  5px 5px no-repeat;font-size: 14px;color: #666;
+            &.active {
+                border:2px solid #3bafda;background: url(img/foreign_confirm.png)  5px 5px no-repeat;
+            }
+        }  
+        }
+       
+    }
+    .foreign-finish-body {
+        width:90%;
+        background: url(http://res11.xesimg.com/i/img/success.png) no-repeat;
+        overflow: hidden;
+        margin:50px auto 30px;
+        .foreign-finish {
+            padding-left: 240px;height: 200px;
+            p.f-title {
+                font-size: 24px;color:#e74c3d;padding-bottom: 10px;
+            }
+            p.f-label {
+                font-size: 16px;color: #333;
+            }
+            p.f-time {
+                 font-size: 16px;color:#e74c3d;
+                span {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+.foreign-detail-nav {
+    padding-top:50px;
+    position: relative;
+    li.pull-select {
+        width:218px;
+       position: absolute;
+        right:95px;
+        top:3px;
+        z-index: 1;
+        a {
+            padding:0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
