@@ -56,4 +56,19 @@ $(function () {
             } catch (e) {}
         }
     });
+
+    // 历史搜索
+    $('.h-text').focus(function(){
+        $('.h-history').css('display','block');
+    }).blur(function(e){
+        $('.h-history').css('display','none');
+    })
+    $('.h-history-ul li').mousedown(function(e){
+        console.log(e);
+        var searchVal = $(this).find('.history-text')[0].innerHTML;
+        $('#mq').val(searchVal);
+        try {
+            search();
+        } catch (e) {}
+    })
 });

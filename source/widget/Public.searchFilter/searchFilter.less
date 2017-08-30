@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+@Nfont-size:14px;
+@Sfont-size:10px;
+@LRpadding:8px;
+
+/* 年级以及知识点选择css(start) */
+.searchFilterSet{
+  
+  //padding: 0 @LRpadding;
+}
+@grey:rgb(102,102,102);
+.searchFilterSetting{
+  display: inline-block;
+  border-radius: 2px;
+  padding:4px 8px;
+}
+.searchFilterTip{
+  color:@grey;
+  padding:12px 6px 12px 0;
+  text-align: center;
+  width:80px;
+  font-weight: normal;
+    background: #fcfcfc;
+    &.course-type {
+        padding:20px 6px 20px 0;
+    }
+};
+/* 年级以及知识点选择css(end) */
+
+/* 搜索面包屑css(start) */
+.search-breadcrumb{
+    font-size: 14px;
+    padding-left: 8px;
+    margin-bottom: 15px;
+    li{
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .all{
+        color: #666666;
+    }
+    .breadcrumb-wrapper{
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        &:before{
+            content: ">";
+            display: inline-block;
+            color: #666666;
+            padding: 0 3px;
+            font-weight: lighter;
+        }
+        &:hover{
+            .bread-close{
+                background: #3bafda;
+            }
+            .close-img{
+                display: none;
+            }
+            .close-img-hover{
+                display: inline-block;
+            }  
+        }
+        a{
+            border:solid 1px #cccccc;
+            display: inline-block;
+            margin: 0;
+            &:hover{
+                border-color: #3bafda;
+                span:first-child{
+                    color:#444;
+                }
+            }
+            span{
+                display: inline-block;
+                height: 25px;
+                line-height: 25px;
+            }
+            span:first-child{
+                padding-left: 8px;
+            }
+            .bread-blue{
+                color: #3bafda;
+                padding: 0;
+            }
+        }
+        .bread-close{
+            padding: 0 10px;
+            img{
+                width: 10px;
+                height: 10px;
+            }
+        }
+        .close-img-hover{
+            display: none;
+        }
+        .breadcrumb-sel-title{
+            &:hover{
+                border-bottom: none;
+            }
+        }
+        .bread-arrow{
+            padding: 0 10px;
+            img{
+                width: 15px;
+                height: 8px;
+                margin-top: -2px;
+            }
+            .bread-arrow-up{
+                display: none;
+            }
+        }
+        .breadcrumb-select-list{
+            position: absolute;
+            width: 132px;
+            top: 25px;
+            left: 20px;
+            border: solid 1px #3bafda;
+            border-top: none;
+            background: #fff;
+            padding-top: 5px;
+            display: none;
+            li{
+                display: block;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+                margin: 0;
+                cursor: text;
+                a{
+                    border: none;
+                }
+            }
+            .current{
+                span{
+                    color: #999999;
+                }
+            }
+        }
+
+    }
+    .breadcrumb-select{
+        &:hover{
+            .breadcrumb-sel-title{
+                border-color: #3bafda;
+            }
+            .bread-arrow-down{
+                display: none;
+            } 
+            .bread-arrow-up{
+                display: inline-block;
+            } 
+            .breadcrumb-select-list{
+                display: block;
+            }
+        }
+    }
+    .present{
+        &:before{
+            content: ">";
+            display: inline-block;
+            color: #666666;
+            padding: 0 3px;
+            font-weight: lighter;
+        }
+    }
+}
+/* 搜索面包屑css(end) */
+
+/* 年级以及知识点选择css重构(start) */
+.searchFilter{//最外层
+    /* 覆盖bootstrap默认设置start */
+    .nav > li > a:hover,
+    .nav > li > a:focus {
+      text-decoration: none;
+      background-color: #fff;
+        color:#1e89e0;
+        
+    }
+    .nav-pills > li.active > a,
+    .nav-pills > li.active > a:hover,
+    .nav-pills > li.active > a:focus {
+      color: #fff;
+      background-color: #3bafda;
+    }
+    ul.nav-course-list li.course-type {
+        float:left;padding:7px 9px;border:1px solid #eaeaea;margin-right: 6px;
+    }
+    ul.nav-course-list li.current {
+        border:2px solid #3bafda; padding:6px 8px;
+    }
+    ul.nav-course-list li.current a {
+        color: #3bafda;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+        &:first-child .searchFilter-dl{
+            border-top: none;
+        }
+    }
+    /* 覆盖bootstrap默认设置end */
+    
+    border: 1px solid rgb(234,234,234);
+    dl{
+        margin-bottom: 0;
+      }
+    input{
+        margin-top: 2px;
+    }
+    .searchFilter-dl{//每一横条
+        border-top: 1px dashed rgb(241,242,246);
+        
+        .searchFilterSet;
+        line-height: 1;
+        .searchFilter-title{//左侧标题
+            .searchFilterTip;
+        }
+        .searchFilter-items{//右侧选项
+            
+            max-height:98px;
+            overflow: auto;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            .searchFilter-item-each{//单个选项
+                cursor: pointer;
+                line-height: 1;
+                .searchFilterSetting;
+            }
+            .searchFilter-item-input{
+                margin-top: 2px;
+            }
+            
+        }
+        .searchFilter-items-input{
+            padding-top: 12px;
+            padding-bottom: 12px;
+            
+        }
+        .searchFilter-more{//更多知识点
+            .searchFilter-more-download{
+                cursor: pointer;
+                padding: 0;
+                width:90px;
+                a{
+                    font-weight: normal;
+                    display: inline-block;
+                    margin:15px 0 15px 0;
+                    padding:2px 5px;
+                }    
+            }
+            
+        }
+        
+    }
+    .filter{//"根据以上条件筛选按钮"
+            margin-top:5px;
+            margin-bottom: 5px;
+            position: relative;
+            left:45%;
+    }
+    .searchFilter-special{//知识点选择（特殊情况加类名）
+        .searchFilter-title{//三个字，加文字间距
+            letter-spacing: 3px;
+        }
+        .searchFilter-items-spe{//普通情况下的
+//            overflow: hidden;
+//            height:2rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            max-height:98px;
+            overflow: auto;
+            .searchFilter-item-each{
+                line-height: 1;
+                margin-bottom: 10px;
+                .searchFilterSetting;
+                cursor: pointer;
+            }
+            .radio-inline{
+                margin-bottom: 10px;
+                margin-left: 0;
+                margin-right: 10px;
+            }
+        }
+        .searchFilter-items-spe-input{//input框所添加的特殊类名
+            margin-top: 12px;
+            margin-bottom: 0;
+            max-height:88px;
+            overflow: auto;
+            .searchFilter-item-input{
+                margin-top: 2px;
+            }
+        }
+        .searchFilter-items-open{
+            overflow: auto;
+            height: 80px;
+        }
+    }
+}
+
