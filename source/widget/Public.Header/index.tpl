@@ -35,28 +35,42 @@
     <!-- 搜索历史 -->
     <div class="h-history">
          <ul class="h-history-ul">
-            <li>
+            <li data-text="初一数学">
                 <span class="history-text pull-left">初一数学</span>
                 <span class="history-hint pull-right">搜索历史</span>
                 <span class="history-del pull-right">删除</span>
             </li>
-            <li>
+            <li data-text="初2数学">
                 <span class="history-text pull-left">初2数学</span>
                 <span class="history-hint pull-right">搜索历史</span>
                 <span class="history-del pull-right">删除</span>
             </li>
-            <li>
-                <span class="history-text pull-left">初3数学</span>
-                <span class="history-hint pull-right">搜索历史</span>
+            <li data-text="初数学初数学初数学初数学初初">
+                <span class="history-text pull-left">初数学初数学初数学初数学初初</span>
                 <span class="history-del pull-right">删除</span>
             </li>
-            <li>
+            <li data-text="初4数学">
                 <span class="history-text pull-left">初4数学</span>
                 <span class="history-hint pull-right">搜索历史</span>
                 <span class="history-del pull-right">删除</span>
             </li>
-            <li>
+            <li data-text="初5数学">
                 <span class="history-text pull-left">初5数学</span>
+                <span class="history-hint pull-right">搜索历史</span>
+                <span class="history-del pull-right">删除</span>
+            </li>
+            <li data-text="初5数学">
+                <span class="history-text pull-left">初5数学</span>
+                <span class="history-hint pull-right">搜索历史</span>
+                <span class="history-del pull-right">删除</span>
+            </li>
+            <li style="display:none;" data-action="hidden" data-text="初88数学">
+                <span class="history-text pull-left">初88数学</span>
+                <span class="history-hint pull-right">搜索历史</span>
+                <span class="history-del pull-right">删除</span>
+            </li>
+            <li style="display:none;" data-action="hidden" data-text="初999数学">
+                <span class="history-text pull-left">初999数学</span>
                 <span class="history-hint pull-right">搜索历史</span>
                 <span class="history-del pull-right">删除</span>
             </li>

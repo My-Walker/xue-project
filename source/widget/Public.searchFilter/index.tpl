@@ -3,7 +3,7 @@
     @require searchFilter.less
     @require searchFilter.js
 --> 
-    
+    <!-- 搜索面包屑 start -->
     <ul class="search-breadcrumb">
         <li class="all"><a href="#">全部结果</a></li>
         <li class="breadcrumb-wrapper breadcrumb-select">
@@ -15,7 +15,7 @@
             </span>
           </a>
           <ul class="breadcrumb-select-list">
-            <li class="current"><span>直播课</span></li>
+            <li class="current"><a href="#">直播课</a></li>
             <li><a href="#">录播课</a></li>
           </ul>
         </li>
@@ -49,7 +49,9 @@
         <li class="present">
           <span>"二次函数"</span>
         </li>
-    </ul>   
+    </ul> 
+    <!-- 搜索面包屑 end -->  
+    <!-- 搜索筛选 start -->
     <div class="searchFilter">
         <div class="row">
             <dl class="searchFilter-dl clearfix">
@@ -118,5 +120,5 @@
             </dd>
         </dl>
       </div>
-
     </div>
+    <!-- 搜索筛选 end -->
