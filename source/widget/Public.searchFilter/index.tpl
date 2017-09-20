@@ -4,52 +4,103 @@
     @require searchFilter.js
 --> 
     <!-- 搜索面包屑 start -->
-    <ul class="search-breadcrumb">
-        <li class="all"><a href="#">全部结果</a></li>
-        <li class="breadcrumb-wrapper breadcrumb-select">
-          <a href="#" class="breadcrumb-sel-title">
-            <span>品类：</span><span>直播课</span>
-            <span class="bread-arrow">
-              <img class="bread-arrow-up" src="img/arrow-up.png" alt="">
-              <img class="bread-arrow-down" src="img/arrow-down.png" alt="">
-            </span>
-          </a>
-          <ul class="breadcrumb-select-list">
-            <li class="current"><a href="#">直播课</a></li>
-            <li><a href="#">录播课</a></li>
-          </ul>
-        </li>
-        <li class="breadcrumb-wrapper">
-          <a  href="#">
-            <span>年级：</span><span class="bread-blue">全部</span>
-            <span class="bread-close">
-              <img class="close-img" src="img/bread_close.png" alt="">
-              <img class="close-img-hover" src="img/bread_close01.png" alt="">
-            </span>
-          </a>
-        </li>
-        <li class="breadcrumb-wrapper">
-          <a href="#">
-            <span>学习科目：</span><span class="bread-blue">语文</span>
-            <span class="bread-close">
-              <img class="close-img" src="img/bread_close.png" alt="">
-              <img class="close-img-hover" src="img/bread_close01.png" alt="">
-            </span>
-          </a>
-        </li>
-        <li class="breadcrumb-wrapper">
-          <a href="#">
-            <span>课程分类：</span><span class="bread-blue">专题强化</span>
-            <span class="bread-close">
-              <img class="close-img" src="img/bread_close.png" alt="">
-              <img class="close-img-hover" src="img/bread_close01.png" alt="">
-            </span>
-          </a>
-        </li>
-        <li class="present">
-          <span>"二次函数"</span>
-        </li>
-    </ul> 
+    <div class="search-breadcrumb-wrapper">
+      <div class="search-breadcrumb-control">
+        <span class="close-searchFilter"><span>收起筛选</span><img src="img/arrow-down.png" alt=""></span>
+        <!-- <span class="show-searchFilter">显示筛选<img src="img/arrow-down.png" alt=""></span> -->
+      </div>
+      <ul class="search-breadcrumb">
+          <li class="all"><a href="#">全部结果</a></li>
+          <li class="breadcrumb-wrapper breadcrumb-select">
+            <a href="#" class="breadcrumb-sel-title">
+              <span>品类：</span><span>直播课</span>
+              <span class="bread-arrow">
+                <img class="bread-arrow-up" src="img/arrow-up.png" alt="">
+                <img class="bread-arrow-down" src="img/arrow-down.png" alt="">
+              </span>
+            </a>
+            <ul class="breadcrumb-select-list">
+              <li class="current"><a href="#">直播课</a></li>
+              <li><a href="#">录播课</a></li>
+            </ul>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a  href="#">
+              <span>年级：</span><span class="bread-blue">全部</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a href="#">
+              <span>学习科目：</span><span class="bread-blue">语文</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a href="#">
+              <span>课程分类：</span><span class="bread-blue">专题强化</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a href="#">
+              <span>课程分类：</span><span class="bread-blue">专题强化</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a href="#">
+              <span>课程分类：</span><span class="bread-blue">专题强化</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a href="#">
+              <span>课程分类：</span><span class="bread-blue">专题强化</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a href="#">
+              <span>课程分类：</span><span class="bread-blue">专题强化</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="breadcrumb-wrapper">
+            <a href="#">
+              <span>课程分类：</span><span class="bread-blue">专题强化</span>
+              <span class="bread-close">
+                <img class="close-img" src="img/bread_close.png" alt="">
+                <img class="close-img-hover" src="img/bread_close01.png" alt="">
+              </span>
+            </a>
+          </li>
+          <li class="present">
+            <span>"二次函数"</span>
+          </li>
+      </ul> 
+    </div>
     <!-- 搜索面包屑 end -->  
     <!-- 搜索筛选 start -->
     <div class="searchFilter">

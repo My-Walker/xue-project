@@ -29,10 +29,44 @@
 /* 年级以及知识点选择css(end) */
 
 /* 搜索面包屑css(start) */
+.search-breadcrumb-wrapper{
+    position: relative;
+    .search-breadcrumb-control{
+        position: absolute;
+        top:15px;
+        right: 0;
+        .close-searchFilter{
+            display: inline-block;
+            color:#333;
+            font-size: 14px;
+            border:solid 1px #cccccc;
+            padding:2px 10px;
+            background: #f6f6f6;
+            cursor: pointer;
+            img{
+                margin-left: 8px;
+                margin-top: -2px;
+                transition: all 0.2s;
+            }
+        }
+        // .close-searchFilter{
+        //     img{
+        //         -webkit-transform:rotate(180deg);
+        //         -moz-transform:rotate(180deg);
+        //         -o-transform:rotate(180deg);
+        //         transform:rotate(180deg);
+        //     }
+        // }
+        .show-searchFilter{
+            margin-left: 15px;
+        }
+    }
+}
 .search-breadcrumb{
     font-size: 14px;
     padding-left: 8px;
     margin-bottom: 15px;
+    max-width: 970px;
     li{
         display: inline-block;
         margin-top: 15px;
@@ -145,6 +179,7 @@
 
     }
     .breadcrumb-select{
+        z-index: 3;
         &:hover{
             .breadcrumb-sel-title{
                 border-color: #3bafda;
@@ -174,6 +209,7 @@
 
 /* 年级以及知识点选择css重构(start) */
 .searchFilter{//最外层
+    overflow: hidden;
     /* 覆盖bootstrap默认设置start */
     .nav > li > a:hover,
     .nav > li > a:focus {
