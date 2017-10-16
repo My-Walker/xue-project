@@ -56,4 +56,12 @@ $(function () {
             } catch (e) {}
         }
     });
+
+    // 历史搜索
+    $('.h-text').focus(function(){
+        $('.h-history').css('display','block');
+    }).blur(function(e){
+        $('.h-history').css('display','none');
+    })
+
 });
