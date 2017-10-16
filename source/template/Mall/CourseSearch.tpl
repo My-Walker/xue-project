@@ -3,14 +3,14 @@
 
 <!-- 学习中心区域 -->
 <div class="container">
-    <ol id="module-breadcrumb" class="breadcrumb">
+   <!-- <ol id="module-breadcrumb" class="breadcrumb">
         <li><a href="#">课程分类</a></li>
         <li class="active">三年级</li>
-    </ol>
+    </ol> -->
     <div class="row top ">
         <!--   12栏的用这个    -->
         <div class="col-md-12">
-          
+            <link rel="import" href="../../widget/Public.searchFilter/index.tpl?__inline">
         </div>
         <!--   12栏结束    -->
         <!--   左右分栏的用这个    -->
