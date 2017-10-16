@@ -45,17 +45,17 @@
     con += '<p class="foreign-teacher-name">秋季双优外教课Level3</p>';
     con += ' <div class="foreign-teacher-list">';
     con += '<div class="foreign-list-title">';
-    con += ' <span class="col-sm-3">上课时间</span>';
-    con += ' <span class="col-sm-3">周一</span>';
-    con += ' <span class="col-sm-3">周三</span>';
-    con += ' <span class="col-sm-3">周四</span>';
+    con += ' <span class="col-sm-4">上课时间</span>';
+    con += ' <span class="col-sm-4">周一</span>';
+    con += ' <span class="col-sm-4">周三</span>';
+//    con += ' <span class="col-sm-3">周四</span>';
     con += '</div>';
     con += '<ul>';
     con += '<li>';
-    con += ' <span class="col-sm-3">09:00-09:30</span>';
-    con += '<span class="col-sm-3">U1-1</span>';
-    con += ' <span class="col-sm-3">U1-1</span>';
-    con += '<span class="col-sm-3">U1-1</span>';
+    con += ' <span class="col-sm-4">09:00-09:30</span>';
+    con += '<span class="col-sm-4">U1-1</span>';
+    con += ' <span class="col-sm-4">U1-1</span>';
+//    con += '<span class="col-sm-3">U1-1</span>';
     con += '</li>';
     con += '</ul>';
     con += '</div>';
@@ -77,5 +77,10 @@
             $('.foreign-teacher-inner .ajust-course-btn').removeClass('disabled');
         }
     })
-
+$('body').off('mouseenter','.foreign-teacher-list li').on('mouseenter','.foreign-teacher-list li',function(){
+    $(this).css('border','2px solid #3bafda');
+});
+    $('body').off('mouseleave','.foreign-teacher-list li').on('mouseleave','.foreign-teacher-list li',function(){
+    $(this).css('border','');
+});
 </script>
