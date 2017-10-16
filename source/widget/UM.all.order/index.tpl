@@ -28,11 +28,17 @@
         </ul>
         <div class="ao-details">
             <ul class="ao-subtitle">
-                <li>
-                    <p>2015-08-02 14:32:12</p>
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
+                    <p class="order-warning">请在24小时内完成此订单支付，否则订单会自动取消</p>
                 </li>
-                <li><span>订单号：201508021432120909</span></li>
-                <li class="order-time">请在24小时内完成此订单支付，否则订单会自动取消</li>
+                <li class="sub-second">¥ 2778.00</li>
+                <li class="sub-third">待付款</li>
+                <li class="sub-fourth">
+                    <a class="btn btn-danger" href="#">立即支付</a>
+                    <a class="del" data-num="123" href="#">取消订单</a>
+                </li>
             </ul>
             <ul>
                 <li>
@@ -63,6 +69,7 @@
                             <em>语文</em>
                             <span>[课程升级] 2015学年五升六年级奥数年卡（竞赛班）</span>
                             <p>顾斐老师<br/>赠品：奥数思维训练汇编六年级</p>
+                            <a class="order-quit" href="javascript:void(0);">申请退课</a>
                         </div>
                         <div class="order-teacher">
                             <div class=" teacher-main teacher-main-border majar-items">
@@ -77,6 +84,7 @@
                             <em>语文</em>
                             <span>[课程升级] 2015学年五升六年级奥数年卡（竞赛班）</span>
                             <p>顾斐老师</p>
+                            <a class="order-quit" href="javascript:void(0);">申请退课</a>
                         </div>
                     </div>
                 </li>
@@ -84,10 +92,8 @@
                 <li class="ao-third ao-li">待支付</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a class="btn btn-danger" href="#">立即支付</a>
                         <span>
                             <a href="#">查看详情</a>
-                            <a class="del" data-num="123" href="#">取消订单</a>
                         </span>
                     </div>
                 </li>
@@ -95,10 +101,12 @@
         </div>
         <div class="ao-details">
             <ul class="ao-subtitle">
-                <li>
-                    <p>2015-08-02 14:32:12</p>
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
                 </li>
-                <li><span>订单号：201508021432120909</span></li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
             </ul>
             <ul>
                 <li>
@@ -116,6 +124,7 @@
                             <em>语文</em>
                             <span>[课程升级] 2015学年五升六年级奥数年卡（竞赛班）</span>
                             <p>顾斐老师</p>
+                            <a class="order-quit" href="javascript:void(0);">申请退课</a>
                         </div>
                     </div>
                 </li>
@@ -123,11 +132,11 @@
                 <li class="ao-third ao-li">已完成</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a class="btn btn-info" href="#">查看详情</a>
+                        <span><a href="#">查看详情</a></span>
                     </div>
                 </li>
             </ul>
-            <ul>
+            <ul class="ao-welfare">
                 <li>
                     <div class="ao-subtitle-left">
                         <div class="handwrap">
@@ -146,7 +155,9 @@
                 <li class="ao-third ao-li">待发货</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a href="#" class="alterAddress" data-id="1234">修改地址</a>
+                        <span>
+                            <a href="#" class="alterAddress" data-id="1234">修改地址</a>
+                        </span>
                     </div>
                 </li>
 
@@ -445,10 +456,12 @@ $('body').on('click', '#order_address_submit_btn', function() {
         </div>
         <div class="ao-details">
             <ul class="ao-subtitle">
-                <li>
-                    <p>2015-08-02 14:32:12</p>
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
                 </li>
-                <li><span>订单号：201508021432120909</span></li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
             </ul>
             <ul>
                 <li>
@@ -470,10 +483,10 @@ $('body').on('click', '#order_address_submit_btn', function() {
                     </div>
                 </li>
                 <li class="ao-second ao-li">￥1389.00</li>
-                <li class="ao-third ao-li">已取消</li>
+                <li class="ao-third ao-li">已退课</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a class="btn btn-danger" href="#" data-toggle="modal" data-target="#orderModal" onclick="orderModal();">重新购买</a>
+                        <a class="btn btn-danger" href="#" data-toggle="modal" data-target="#orderModal" onclick="orderModal();">重新报名</a>
                         <span>
                             <a href="#">查看详情</a>
                         </span>
@@ -483,10 +496,12 @@ $('body').on('click', '#order_address_submit_btn', function() {
         </div>
         <div class="ao-details">
             <ul class="ao-subtitle">
-                <li>
-                    <p>2015-08-02 14:32:12</p>
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
                 </li>
-                <li><span>订单号：201508021432120909</span></li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
             </ul>
             <ul>
                 <li>
@@ -511,8 +526,8 @@ $('body').on('click', '#order_address_submit_btn', function() {
                 <li class="ao-third ao-li">待审核</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a class="btn btn-info" href="#">查看详情</a>
                         <span>
+                            <a href="#">查看详情</a>
                             <a class="del" data-num="23">取消订单</a>
                         </span>
                     </div>
@@ -521,10 +536,12 @@ $('body').on('click', '#order_address_submit_btn', function() {
         </div>
         <div class="ao-details">
             <ul class="ao-subtitle">
-                <li>
-                    <p>2015-08-02 14:32:12</p>
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
                 </li>
-                <li><span>订单号：201508021432120909</span></li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
             </ul>
             <ul>
                 <li>
@@ -549,17 +566,21 @@ $('body').on('click', '#order_address_submit_btn', function() {
                 <li class="ao-third ao-li">待收货</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a class="btn btn-info" href="#">查看详情</a>
+                        <span>
+                            <a href="#">查看详情</a>
+                        </span>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="ao-details">
             <ul class="ao-subtitle">
-                <li>
-                    <p>2015-08-02 14:32:12</p>
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
                 </li>
-                <li><span>订单号：201508021432120909</span></li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
             </ul>
             <ul>
                 <li>
@@ -584,17 +605,21 @@ $('body').on('click', '#order_address_submit_btn', function() {
                 <li class="ao-third ao-li">待发货</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a class="btn btn-info" href="#">查看详情</a>
+                        <span>
+                            <a href="#">查看详情</a>
+                        </span>
                     </div>
                 </li>
             </ul>
         </div>
         <div class="ao-details">
             <ul class="ao-subtitle">
-                <li>
-                    <p>2015-08-02 14:32:12</p>
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
                 </li>
-                <li><span>订单号：201508021432120909</span></li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
             </ul>
             <ul>
                 <li>
@@ -619,7 +644,9 @@ $('body').on('click', '#order_address_submit_btn', function() {
                 <li class="ao-third ao-li">审核未通过</li>
                 <li class="ao-li">
                     <div class="ao-operation">
-                        <a class="btn btn-info" href="#">查看详情</a>
+                        <span>
+                            <a href="#">查看详情</a>
+                        </span>
                     </div>
                 </li>
             </ul>
