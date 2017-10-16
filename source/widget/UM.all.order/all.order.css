@@ -1,12 +1,6 @@
 .ao-content {
-  width: 1010px;
+  width: 100%;
   margin: 0 auto;
-}
-.ao-content ul {
-  display: inline-block;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .ao-content .ao-list {
   height: 28px;
@@ -23,15 +17,15 @@
 .ao-content .ao-list .current a {
   display: inline-block;
   height: 24px;
-  color: #3bafda;
+  color: #1e89e0;
   font-weight: bold;
-  border-bottom: 2px solid #3bafda;
+  border-bottom: 2px solid #1e89e0;
 }
 .ao-content .some-order .ao-title {
   height: 50px;
   width: 100%;
   margin-bottom: 20px;
-  background-color: #fcfcfc;
+  background-color: #fff;
   border: 1px solid #eaeaea;
 }
 .ao-content .some-order .ao-title li {
@@ -61,33 +55,183 @@
   background-color: #fcfcfc;
 }
 .ao-content .some-order .ao-details .ao-subtitle {
-  float: left;
   width: 100%;
-  margin: 0;
-  padding: 15px 0;
+  min-height: 40px;
+  line-height: 40px;
   border-bottom: 1px solid #eaeaea;
-  background-color: #fff;
+  background-color: #f3f3f3;
+  padding-top: 2px;
+}
+.ao-content .some-order .ao-details .ao-subtitle:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  clear: both;
 }
 .ao-content .some-order .ao-details .ao-subtitle li {
+  font-family: "SimSun";
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-first {
+  width: 575px;
+  padding-left: 20px;
+  font-size: 14px;
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-first .order-num {
+  padding-left: 50px;
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-second {
+  width: 16%;
+  text-align: center;
+  font-size: 16px;
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-third {
+  width: 12%;
+  text-align: center;
+  font-size: 14px;
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-fourth {
+  width: 15%;
+  text-align: center;
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-fourth a {
+  display: inline-block;
+  padding: 0 3px;
+  font-size: 14px;
+  margin: 0 auto;
+  font-family: "SimSun";
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-fourth .btn-danger {
+  margin-top: 3px;
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-fourth .oncepay {
+  width: 100px;
+  height: 33px;
+  line-height: 33px;
+}
+.ao-content .some-order .ao-details .ao-subtitle .sub-fourth .del,
+.ao-content .some-order .ao-details .ao-subtitle .sub-fourth .desc {
+  color: #3bafda;
+}
+.ao-content .some-order .ao-details .ao-order {
+  height: 100%;
+  border-bottom: 1px solid #eaeaea;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: "SimSun";
+  background-color: #fff;
+}
+.ao-content .some-order .ao-details .ao-order li {
+  padding: 20px 0;
+}
+.ao-content .some-order .ao-details .ao-order .ao-course {
+  width: 575px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.ao-content .some-order .ao-details .ao-order .ao-course .ao-time-desc {
   float: left;
-  font-size: 12px;
-  color: #333;
+  width: 32%;
 }
-.ao-content .some-order .ao-details .ao-subtitle li p {
-  margin: 0 55px 0 18px;
-  font-size: 12px;
-  color: #999;
+.ao-content .some-order .ao-details .ao-order .ao-course .ao-time-desc div {
+  height: auto;
+  line-height: 25px;
 }
-.ao-content .some-order .ao-details .ao-subtitle li span {
-  margin-right: 488px;
+.ao-content .some-order .ao-details .ao-order .ao-course .ao-course-desc {
+  float: left;
+  width: 68%;
+  line-height: 25px;
 }
-.ao-content .some-order .ao-details .ao-subtitle li em {
-  font-style: normal;
-  font-weight: bold;
-  color: #e74c3c;
+.ao-content .some-order .ao-details .ao-order .ao-course .ao-course-desc em.lesson {
+  padding: 1px 8px;
+  border-radius: 3px;
+  margin-right: 5px;
+  vertical-align: top;
+  color: #fff;
+  background-color: #ffbc3c;
+}
+.ao-content .some-order .ao-details .ao-order .ao-course .ao-course-desc .text {
+  vertical-align: top;
+}
+.ao-content .some-order .ao-details .ao-order .ao-price-desc {
+  width: 16%;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+}
+.ao-content .some-order .ao-details .ao-order .ao-apply-status {
+  width: 12%;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+}
+.ao-content .some-order .ao-details .ao-order .ao-handle {
+  width: 15%;
+  margin: 0;
+  text-align: center;
+}
+.ao-content .some-order .ao-details .ao-order .ao-handle .ao-text .apply-cancel {
+  color: #3bafda;
+}
+.ao-content .some-order .ao-details .ao-order .ao-handle .re-apply {
+  display: inline-block;
+  width: 100px;
+  height: 33px;
+  font-size: 14px;
+}
+.ao-content .some-order .ao-details .ao-bottom {
+  border-bottom: 1px solid #eaeaea;
+}
+.ao-content .some-order .ao-details .ao-welfare {
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: "SimSun";
+  background-color: #fff;
+}
+.ao-content .some-order .ao-details .ao-welfare li {
+  padding: 15px 0;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-welfare-text {
+  width: 575px;
+  margin: 0;
+  overflow: hidden;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-welfare-text .ao-welfare-content {
+  padding-left: 20px;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-welfare-text .ao-welfare-content em.welfare {
+  padding: 1px 8px;
+  border-radius: 3px;
+  margin-right: 5px;
+  vertical-align: top;
+  color: #e74c3d;
+  border: 1px solid #e74c3d;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-welfare-text .ao-welfare-content .text {
+  vertical-align: top;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-welfare-desc {
+  width: 16%;
+  margin: 0;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-welfare-status {
+  width: 12%;
+  margin: 0;
+  text-align: center;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-handle {
+  width: 15%;
+  margin: 0;
+  text-align: center;
+}
+.ao-content .some-order .ao-details .ao-welfare .ao-handle .ao-text .check-logistics {
+  color: #3bafda;
 }
 .ao-content .some-order .ao-details ul {
-  float: left;
   width: 100%;
 }
 .ao-content .some-order .ao-details ul li {
@@ -96,6 +240,32 @@
 .ao-content .some-order .ao-details ul li .ao-subtitle-left {
   width: 575px;
   border-right: 1px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
+}
+.ao-content .some-order .ao-details ul li .ao-subtitle-left:first-child {
+  border-top: none;
+}
+.ao-content .some-order .ao-details ul li .ao-subtitle-left .handwrap {
+  height: 80px;
+  line-height: 80px;
+  font-size: 16px;
+}
+.ao-content .some-order .ao-details ul li .ao-subtitle-left .handwrap span.handout {
+  float: left;
+  width: 400px;
+  padding-left: 85px;
+}
+.ao-content .some-order .ao-details ul li .ao-subtitle-left .handwrap span.handout em {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  color: #e74c3d;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #e74c3d;
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
 }
 .ao-content .some-order .ao-details ul li .ao-subtitle-left .order-teacher {
   width: 100%;
@@ -161,7 +331,7 @@
 }
 .ao-content .some-order .ao-details ul li .ao-subtitle-left .order-teacher em {
   float: left;
-  margin: 25px 5px 0 0;
+  margin: 28px 5px 0 0;
   padding: 1px 8px;
   border-radius: 3px;
   font-style: normal;
@@ -172,9 +342,11 @@
   float: left;
   width: 330px;
   height: 18px;
-  margin-top: 24px;
+  margin-top: 27px;
   font-size: 14px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .ao-content .some-order .ao-details ul li .ao-subtitle-left .order-teacher p {
   float: left;
@@ -184,6 +356,13 @@
   font-size: 12px;
   margin: 10px 0 0 -43px;
 }
+.ao-content .some-order .ao-details ul li .ao-subtitle-left .order-teacher .order-quit {
+  float: right;
+  display: block;
+  font-size: 14px;
+  padding: 0 20px;
+  margin-top: -18px;
+}
 .ao-content .some-order .ao-details ul li .ao-subtitle-left .ot-first {
   border-bottom: 1px solid #eaeaea;
 }
@@ -192,30 +371,61 @@
 }
 .ao-content .some-order .ao-details ul li .ao-operation span {
   display: inline-block;
-  width: 50px;
 }
 .ao-content .some-order .ao-details ul li .ao-operation span a {
-  font-size: 12px;
+  font-size: 14px;
   font-family: "SimSun";
-  color: #333;
+  color: #3bafda;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 8px;
 }
 .ao-content .some-order .ao-details ul li .ao-operation .btn {
   width: 100px;
   margin-bottom: 12px;
-  font-family: "simsun";
   font-size: 14px;
+  font-family: "SimSun";
+  margin-top: -8px;
+  margin-left: 4px;
 }
 .ao-content .some-order .ao-details ul .ao-li {
-  margin-top: 20px;
+  margin-top: 26px;
   text-align: center;
-  font-family: "Microsoft YaHei";
-  font-size: 16px;
+  font-family: "SimSun";
+  font-size: 14px;
 }
 .ao-content .some-order .ao-details ul .ao-second {
-  width: 155px;
+  width: 16%;
+  margin-top: 28px;
+  font-size: 12px;
 }
 .ao-content .some-order .ao-details ul .ao-third {
-  width: 152px;
-  padding-right: 24px;
-  _padding-right: 2px;
+  width: 12%;
+  margin: 26px 21px 0 0;
+}
+.ao-content .some-order .ao-welfare {
+  overflow: hidden;
+}
+.order-setAddress {
+  float: left;
+  display: block;
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  background: #fff;
+}
+.order-setAddress .ui_ship_addr ul.shipadd_list li {
+  width: 100%;
+}
+.order-setAddress .ui_ship_addr ul.shipadd_list li.active {
+  border: 1px solid #3bafda;
+}
+.order-setAddress .ui_ship_addr ul.shipadd_list li .ship_btns {
+  visibility: visible;
+}
+.order-setAddress .ui_ship_addr ul.shipadd_list li .addr_detail span.addr_name {
+  padding-left: 0;
+  cursor: pointer;
+}
+.order-setAddress .f_detailAddress {
+  display: none;
 }

@@ -12,7 +12,7 @@
         <div class="col-md-10 col-sm-9 user-manage-body">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3>订单详情</h3></div>
+                    <h3>我的订单</h3></div>
                 <div class="panel-body row">
                     <!-- *********************** 内容区域开始 *********************** -->
                     <link rel="import" href="../../widget/UM.order/index.tpl?__inline">

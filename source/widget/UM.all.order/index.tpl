@@ -26,6 +26,7 @@
             <li class="ao-third">状态</li>
             <li class="ao-fourth">操作</li>
         </ul>
+        <!--2017-10-update-huangtao first demo -->
         <div class="ao-details">
             <ul class="ao-subtitle">
                 <li class="sub-first">
@@ -36,9 +37,229 @@
                 <li class="sub-second">¥ 2778.00</li>
                 <li class="sub-third">待付款</li>
                 <li class="sub-fourth">
-                    <a class="btn btn-danger" href="#">立即支付</a>
-                    <a class="del" data-num="123" href="#">取消订单</a>
+                    <div>
+                        <a class="btn btn-danger oncepay" href="#">立即支付</a>
+                    </div>
+                    <div>
+                        <span>
+                            <a class="desc" data-id="123"  href="#">查看详情</a>
+                        </span>
+                        <span>
+                            <a class="del" data-id="123" href="#">取消订单</a>
+                        </span>
+                    </div>
+                    
+                    
                 </li>
+            </ul>
+            <ul class="ao-order">
+                <li class="ao-first ao-course">
+                    <div class="ao-time-desc">
+                        <div class="date">9月9日-1月13日</div>
+                        <div class="time">每周六19:00-21:00</div>
+                    </div>
+                    <div class="ao-course-desc">
+                        <em class="lesson">语文</em>
+                        <span class="text">[课程升级] 2015学年五升六年级奥数年卡（竞赛班）2015学年五升六年级奥数年卡</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-price-desc">￥1389.00</li>
+                <li class="ao-third ao-apply-status">未报名</li>
+                <li class="ao-fourth ao-handle"></li>
+            </ul>
+            <ul class="ao-welfare">
+                <li class="ao-first ao-welfare-text">
+                    <div class="ao-welfare-content">
+                        <em class="welfare">福利</em>
+                        <span class="text">纸质讲义</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-welfare-desc"></li>
+                <li class="ao-third ao-welfare-status"></li>
+                <li class="ao-fourth ao-handle"></li>
+            </ul>
+        </div>
+        <!--2017-10-update-huangtao second demo -->
+        <div class="ao-details">
+            <ul class="ao-subtitle">
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
+                </li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已完成</li>
+                <li class="sub-fourth">
+                    <div>
+                        <span>
+                            <a class="desc" data-id="123" href="#">查看详情</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="ao-order">
+                <li class="ao-first ao-course">
+                    <div class="ao-time-desc">
+                        <div class="date">9月9日-1月13日</div>
+                        <div class="time">每周六19:00-21:00</div>
+                    </div>
+                    <div class="ao-course-desc">
+                        <em class="lesson">语文</em>
+                        <span class="text">[课程升级] 2015学年五升六年级奥数年卡（竞赛班）2015学年五升六年级奥数年卡</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-price-desc">￥1389.00</li>
+                <li class="ao-third ao-apply-status">已报名</li>
+                <li class="ao-fourth ao-handle">
+                    <div class="ao-text">
+                        <span>
+                            <a class="apply-cancel" data-id="123" href="#">申请退课</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+            <!-- ao-bottom -->
+            <ul class="ao-welfare">
+                <li class="ao-first ao-welfare-text">
+                    <div class="ao-welfare-content">
+                        <em class="welfare">福利</em>
+                        <span class="text">纸质讲义</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-welfare-desc"></li>
+                <li class="ao-third ao-welfare-status">已发货</li>
+                <li class="ao-fourth ao-handle">
+                    <div class="ao-text">
+                        <span>
+                            <a class="check-logistics" data-id="123" href="#">查看物流</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--2017-10-update-huangtao third demo -->
+        <div class="ao-details">
+            <ul class="ao-order">
+                <li class="ao-first ao-course">
+                    <div class="ao-time-desc">
+                        <div class="date">9月9日-1月13日</div>
+                        <div class="time">每周六19:00-21:00</div>
+                    </div>
+                    <div class="ao-course-desc">
+                        <em class="lesson">语文</em>
+                        <span class="text">[课程升级] 2015学年五升六年级奥数年卡（竞赛班）2015学年五升六年级奥数年卡</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-price-desc">￥1389.00</li>
+                <li class="ao-third ao-apply-status">已报名</li>
+                <li class="ao-fourth ao-handle">
+                    
+                </li>
+            </ul>
+            <ul class="ao-welfare ao-bottom">
+                <li class="ao-first ao-welfare-text">
+                    <div class="ao-welfare-content">
+                        <em class="welfare">福利</em>
+                        <span class="text">纸质讲义</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-welfare-desc"></li>
+                <li class="ao-third ao-welfare-status">待发货</li>
+                <li class="ao-fourth ao-handle">
+                    <div class="ao-text">
+                        <span>
+                            <a class="check-logistics" data-id="123" href="#">修改地址</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="ao-welfare">
+                <li class="ao-first ao-welfare-text">
+                    <div class="ao-welfare-content">
+                        <em class="welfare">福利</em>
+                        <span class="text">纸质讲义</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-welfare-desc"></li>
+                <li class="ao-third ao-welfare-status">待发货</li>
+                <li class="ao-fourth ao-handle">
+                    <div class="ao-text">
+                        <span>
+                            <a class="check-logistics" data-id="123" href="#">修改地址</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--2017-10-update-huangtao fourth demo -->
+        <div class="ao-details">
+            <ul class="ao-subtitle">
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
+                </li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
+                <li class="sub-fourth">
+                    <div>
+                        <span>
+                            <a class="desc" data-id="123" href="#">查看详情</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="ao-order">
+                <li class="ao-first ao-course">
+                    <div class="ao-time-desc">
+                        <div class="date">9月9日-1月13日</div>
+                        <div class="time">每周六19:00-21:00</div>
+                    </div>
+                    <div class="ao-course-desc">
+                        <em class="lesson">语文</em>
+                        <span class="text">[课程升级] 2015学年五升六年级奥数年卡（竞赛班）2015学年五升六年级奥数年卡</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-price-desc">￥1389.00</li>
+                <li class="ao-third ao-apply-status">已退课</li>
+                <li class="ao-fourth ao-handle">
+                    <div>
+                        <a class="btn btn-danger re-apply" data-id="123" href="#">重新报名</a>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="ao-welfare">
+                <li class="ao-first ao-welfare-text">
+                    <div class="ao-welfare-content">
+                        <em class="welfare">福利</em>
+                        <span class="text">纸质讲义</span>
+                    </div>
+                </li>
+                <li class="ao-second ao-welfare-desc"></li>
+                <li class="ao-third ao-welfare-status">待发货</li>
+                <li class="ao-fourth ao-handle">
+                    <div class="ao-text">
+                        <span>
+                            <a class="check-logistics" data-id="123" href="#">修改地址</a>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!-- 2017-huangtao-注释掉 start -->
+        <div class="ao-details">
+            <ul class="ao-subtitle">
+                <li class="sub-first">
+                    <span class="order-time">2015-08-02 14:32:12</span>
+                    <span class="order-num">订单号：201508021432120909</span>
+                </li>
+                <li class="sub-second">¥ 1389.00</li>
+                <li class="sub-third">已支付</li>
             </ul>
             <ul>
                 <li>
@@ -98,6 +319,7 @@
                     </div>
                 </li>
             </ul>
+            
         </div>
         <div class="ao-details">
             <ul class="ao-subtitle">
@@ -251,6 +473,7 @@
                         <span class="close_address"></span>
                     </div>
                 </div>
+
 <script>
     function renderAreaSelect() {
         var defaults = {
