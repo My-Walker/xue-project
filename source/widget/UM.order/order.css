@@ -54,6 +54,10 @@ table {
   font-weight: bold;
   color: #666;
 }
+.order-content .information .receive-info,
+.order-content .information .check-pay-info-text {
+  padding-top: 18px;
+}
 .order-content .information ul {
   list-style: none;
   margin: 0;
@@ -67,15 +71,46 @@ table {
   font-family: "Microsoft YaHei";
   font-size: 16px;
 }
+.order-content .information ul .marTop {
+  margin-top: 25px;
+}
 .order-content .information ul .gt-first {
+  float: left;
   width: 60%;
-  text-align: center;
 }
 .order-content .information ul .gt-second {
   width: 14%;
 }
 .order-content .information ul .gt-third {
   width: 13%;
+}
+.order-content .information ul .gt-fourth {
+  width: 13%;
+}
+.order-content .information .check-info {
+  padding: 8px 0;
+  border: 1px solid #eaeaea;
+  font-size: 14px;
+}
+.order-content .information .check-info .check-table tr {
+  line-height: 20px;
+}
+.order-content .information .check-info .check-table tr td {
+  text-align: left;
+  padding-left: 10px;
+}
+.order-content .information .check-info .check-table tr .total-pay {
+  color: #e74c3c;
+  font-style: normal;
+  font-weight: bold;
+}
+.order-content .information .check-info .check-table tr td:nth-child(1) {
+  width: 130px;
+  color: #666;
+}
+.order-content .information .repay-btn-wrapper {
+  margin-top: 15px;
+  text-align: right;
 }
 .order-content .information .order-table tbody tr td {
   text-align: left;
@@ -95,24 +130,110 @@ table {
   color: #666;
   text-align: right;
 }
-.order-content .information .order-table tbody tr #order-pay {
+.order-content .information .order-table tbody tr #order-pay .other-status {
   color: #e74c3c;
 }
 .order-content .information .order-table tbody tr #ot-bold {
   font-family: "Microsoft YaHei";
-  font-size: 14px;
-}
-.order-content .information .order-table tbody tr #ot-bold em {
   color: #e74c3c;
   font-style: normal;
   font-size: 16px;
+}
+.order-content .goods .order-desc-wrapper {
+  border: 1px solid #eaeaea;
+}
+.order-content .goods .order-desc-wrapper .order-info {
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #eaeaea;
+}
+.order-content .goods .order-desc-wrapper .order-info li {
+  padding: 20px 0;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-first {
+  width: 60%;
+  padding-left: 15px;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-first .gd-time-desc {
+  float: left;
+  width: 32%;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-first .gd-time-desc div {
+  height: auto;
+  line-height: 25px;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-first .gd-course-desc {
+  float: left;
+  width: 68%;
+  line-height: 25px;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-first .gd-course-desc em.lesson {
+  padding: 1px 8px;
+  border-radius: 3px;
+  margin-right: 5px;
+  vertical-align: top;
+  color: #fff;
+  background-color: #ffbc3c;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-first .gd-course-desc .text {
+  vertical-align: top;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-second {
+  width: 14%;
+  text-align: center;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-third {
+  width: 13%;
+  text-align: center;
+}
+.order-content .goods .order-desc-wrapper .order-info .goods-fourth {
+  width: 13%;
+  text-align: center;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare {
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  font-size: 14px;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare li {
+  padding: 15px 0;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare .goods-first {
+  width: 60%;
+  padding-left: 15px;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare .goods-first .gd-welfare-content em.welfare {
+  padding: 1px 8px;
+  border-radius: 3px;
+  margin-right: 5px;
+  vertical-align: top;
+  color: #e74c3d;
+  border: 1px solid #e74c3d;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare .goods-first .gd-welfare-content .text {
+  vertical-align: top;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare .goods-second {
+  width: 14%;
+  text-align: center;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare .goods-third {
+  width: 13%;
+  text-align: center;
+}
+.order-content .goods .order-desc-wrapper .goods-welfare .goods-fourth {
+  width: 13%;
+  text-align: center;
 }
 .order-content .goods #goods-ul {
   display: inline-block;
   width: 100%;
   min-width: 800px;
-  height: 145px;
-  border: 1px solid #eaeaea;
+  height: auto;
+  overflow: hidden;
 }
 .order-content .goods #goods-ul .goods-title {
   padding: 15px 0 32px 0;
@@ -122,52 +243,154 @@ table {
   font-size: 12px;
   color: #333;
 }
+.order-content .goods #goods-ul .sub-title {
+  background-color: #f3f3f3;
+}
 .order-content .goods #goods-ul .goods-content {
-  height: 95px;
-  padding: 23px 0 0 0;
-  background-color: #fcfcfc;
+  height: auto;
+  overflow: hidden;
+  background-color: #fff;
+  font-size: 14px;
 }
-.order-content .goods #goods-ul .goods-content li .order-teacher {
+.order-content .goods #goods-ul .goods-content li {
   float: left;
-  width: 465px;
-  height: 80px;
-  margin: -25px 0 0 5px;
 }
-.order-content .goods #goods-ul .goods-content li .order-teacher img {
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left {
+  width: 575px;
+  border-right: 1px solid #eaeaea;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher {
+  width: 100%;
+  height: 115px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .teacher-main {
   float: left;
+  overflow: hidden;
+  width: 60px;
+  height: 90px;
+  margin: 20px 15px 0 12px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .teacher-main .avatar-photo {
+  float: left;
+  margin-right: 10px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .teacher-main .avatar-photo img {
   width: 60px;
   height: 60px;
-  margin: 20px 15px 0 12px;
-  _margin: 25px 15px 0 12px;
   border-radius: 50%;
 }
-.order-content .goods #goods-ul .goods-content li .order-teacher em {
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items {
+  position: relative;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items ul {
+  overflow: hidden;
+  width: 800px;
+  height: 60px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items ul li {
+  overflow: hidden;
   float: left;
-  margin: 25px 5px 0 0;
+  width: 158px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items .avatar-roll {
+  position: absolute;
+  right: 6px;
+  bottom: 4px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items .avatar-roll a {
+  outline: none;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items .avatar-roll a em {
+  display: inline-block;
+  height: 17px;
+  line-height: 17px;
+  text-align: center;
+  text-indent: -9999em;
+  vertical-align: top;
+  width: 17px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items .avatar-roll a .icon-chevron-left {
+  background: url('img/icon_chevron_left.png') no-repeat 0 0;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items .avatar-roll a .icon-chevron-right {
+  background: url('img/icon_chevron_right.png') no-repeat 0 0;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items .avatar-roll a.none .icon-chevron-left {
+  background: url('img/icon_chevron_left_none.png') no-repeat 0 0;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher .majar-items .avatar-roll a.none .icon-chevron-right {
+  background: url('img/icon_chevron_right_none.png') no-repeat 0 0;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher em {
+  float: left;
+  margin: 28px 5px 0 0;
   padding: 1px 8px;
   border-radius: 3px;
   font-style: normal;
-  font-size: 12px;
   color: #fff;
   background-color: #ffbc3c;
 }
-.order-content .goods #goods-ul .goods-content li .order-teacher span {
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher span {
   float: left;
   width: 330px;
   height: 18px;
-  margin-top: 24px;
+  margin-top: 27px;
   font-size: 14px;
   overflow: hidden;
 }
-.order-content .goods #goods-ul .goods-content li .order-teacher p {
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .order-teacher p {
   float: left;
-  width: 80px;
+  width: 350px;
   height: 18px;
+  line-height: 22px;
   font-size: 12px;
-  margin: 10px 0 0 -60px;
+  margin: 10px 0 0 -43px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .ot-first {
+  border-bottom: 1px solid #eaeaea;
+}
+.order-content .goods #goods-ul .goods-content li .ao-operation {
+  width: 100px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-operation span {
+  display: inline-block;
+  width: 50px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-operation span a {
+  font-size: 12px;
+  font-family: "SimSun";
+  color: #333;
+}
+.order-content .goods #goods-ul .goods-content li .ao-operation .btn {
+  width: 100px;
+  margin-bottom: 12px;
+  font-size: 14px;
 }
 .order-content .settle .btn-danger {
   float: right;
   width: 100px;
   font-size: 14px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .handwrap {
+  height: 80px;
+  line-height: 80px;
+  font-size: 16px;
+  border-top: 1px solid #eaeaea;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .handwrap span.handout {
+  float: left;
+  width: 400px;
+  padding-left: 85px;
+}
+.order-content .goods #goods-ul .goods-content li .ao-subtitle-left .handwrap span.handout em {
+  width: 40px;
+  height: 20px;
+  line-height: 20px;
+  color: #e74c3d;
+  font-size: 14px;
+  border-radius: 2px;
+  border: 1px solid #e74c3d;
+  text-align: center;
+  margin-right: 10px;
+  display: inline-block;
 }

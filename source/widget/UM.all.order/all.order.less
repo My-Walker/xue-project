@@ -27,7 +27,7 @@
             height: 50px;
             width: 100%;
             margin-bottom: 20px;
-            background-color: #fcfcfc;
+            background-color: #fff;
             border: 1px solid #eaeaea;
             li{
                 float: left;
@@ -60,7 +60,7 @@
                 min-height: 40px;
                 line-height: 40px;
                 border-bottom: 1px solid #eaeaea;
-                background-color: #fff;
+                background-color: #f3f3f3;
                 padding-top: 2px;
                 &:after{
                     content: '';
@@ -103,8 +103,8 @@
                     width: 15%;
                     text-align: center;
                     a{
-                        width:100px;
-                        display: block;
+                        display: inline-block;
+                        padding: 0 3px;
                         font-size: 14px;
                         margin: 0 auto;
                         font-family: "SimSun";
@@ -112,11 +112,142 @@
                     .btn-danger{
                         margin-top: 3px;
                     }
-                    .del{
+                    .oncepay{
+                        width:100px;
+                        height:33px;
+                        line-height: 33px;
+                    }
+                    .del, .desc{
                         color: #3bafda;
                     }
                 }
             }
+            .ao-order {
+                height:100%;
+                border-bottom: 1px solid #eaeaea;
+                overflow: hidden;
+                font-size:14px;
+                font-family: "SimSun";
+                background-color: #fff;
+                li {
+                    padding:20px 0;
+                    
+                }
+                .ao-course{
+                    width:575px;
+                    padding-left:20px;
+                    overflow: hidden;
+                    .ao-time-desc{
+                        float: left;
+                        width: 32%;
+                        div{
+                            height: auto;
+                            line-height: 25px;
+                        }
+
+                    }
+                    .ao-course-desc {
+                        float: left;
+                        width: 68%;
+                        line-height: 25px;
+                        em.lesson{
+                            padding: 1px 8px;
+                            border-radius: 3px;
+                            margin-right:5px;
+                            vertical-align: top;
+                            color: #fff;
+                            background-color: #ffbc3c;
+                        }
+                        .text{
+                            vertical-align: top;
+                        }
+                    }
+                }
+                .ao-price-desc{
+                    width:16%;
+                    margin:0;
+                    text-align: center;
+                    font-size:14px;
+                    line-height: 25px;
+                }
+                .ao-apply-status{
+                    width:12%;
+                    margin:0;
+                    text-align: center;
+                    font-size:14px;
+                    line-height: 25px;
+
+                }
+                .ao-handle{
+                    width: 15%;
+                    margin:0;
+                    text-align: center;
+                    .ao-text{
+                        .apply-cancel{
+                            color: #3bafda;
+                        }
+                    }
+                    .re-apply{
+                        display: inline-block;
+                        width:100px;
+                        height:33px;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .ao-bottom{
+                border-bottom: 1px solid #eaeaea;
+            }
+            .ao-welfare {
+                height:100%;
+                overflow: hidden;
+                font-size:14px;
+                font-family: "SimSun";
+                background-color: #fff;
+                li {
+                    padding:15px 0;
+                }
+                .ao-welfare-text{
+                    width: 575px;
+                    margin:0;
+                    overflow: hidden;
+                    .ao-welfare-content{
+                        padding-left:20px;
+                        em.welfare{
+                            padding: 1px 8px;
+                            border-radius: 3px;
+                            margin-right:5px;
+                            vertical-align: top;
+                            color: #e74c3d;
+                            border: 1px solid #e74c3d;
+                        }
+                        .text{
+                            vertical-align: top;
+                        }
+                    }
+                }
+                .ao-welfare-desc{
+                    width: 16%;
+                    margin:0;
+                }
+                .ao-welfare-status{
+                    width: 12%;
+                    margin:0;
+                    text-align: center;
+                }
+                .ao-handle{
+                    width: 15%;
+                    margin:0;
+                    text-align: center;
+                    .ao-text{
+                        .check-logistics{
+                            color: #3bafda;
+                        }
+                    }
+                }
+                
+            }
+
             ul{
                 width: 100%;
                 li{
@@ -294,7 +425,7 @@
         }
         .ao-welfare{
             overflow: hidden;
-            border-top: 1px solid #eaeaea;
+            // border-top: 1px solid #eaeaea;
         }
     }
 }
