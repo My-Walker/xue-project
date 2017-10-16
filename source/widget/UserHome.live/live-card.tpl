@@ -15,7 +15,7 @@
                 小琪老师老师的直播讲座 </p>
             <p>
                 <span class="time">今天 11:15-23:00</span>
-                <span class="watchNum">1人正在学</span>
+                <span class="watchNum">2人正在学</span>
             </p>
         </div>
     </div>
