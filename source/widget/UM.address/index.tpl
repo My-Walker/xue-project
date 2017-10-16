@@ -1,6 +1,7 @@
 <!--
     @require address.js
     @require ui-address.less
+    @require ../UM.card.activation/card.activation.less
 -->
 <!-- 收货地址 -->
 
@@ -105,6 +106,15 @@
         <span class="close_address"></span>
     </div>
 </div>
+<div class="prompt-box">
+                <img class="prompt" src="http://res12.xesimg.com/account/img/prompt.png">
+                <div class="ca-prompt-box">
+                    <h3>提示</h3>
+                    <p>如需修改订单的配送地址，请进入                          
+                        <a href="#" style="color: #3bafda">我的订单</a>
+                    </p>
+                </div>
+            </div>
 <script>
     function renderAreaSelect() {
         var defaults = {
